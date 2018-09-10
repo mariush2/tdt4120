@@ -80,3 +80,100 @@ function counting-sort(A, B, k)
     for j = A.length downto 1
        B[C[A[j]]] = A[j]
        C[A[j]] -= 1
+
+### T(n) = Theta(n + k)
+Utvid veriområdet
+
+## 3:6 Radikssortering
+function radix-sort(A, d)
+    for i = 1 to d
+       sort* A by digit d
+
+T(n) = Theta(d * (n + k))
+
+Bryt grensen
+... denne gang for AC
+
+## 4:6 Bøttesortering
+function bucket-sort(A)
+    n = A.length
+    create B[0...n-1]
+    for i = 0 to n
+       make B[i] an empty list
+    for i = 1 to n
+       add A[i] to B[floor(nA[i])]
+    for i = 0 to n - 1
+       sort list B[i] #Bruker insertion sort
+    concatenate B[0]...B[n - 1]
+
+T_w(n) = Theta(n^2)
+T_a(n) = Theta(n)
+T_b(n) = Theta(n)
+
+Bryt grensen for AC
+... ved å begrense problemet
+
+## 5:6 Randomized Select
+
+Hvem er på 10. plass? (f.eks.)
+- Antar distinkte verdier!
+
+Induksjon/reduksjon
+- Anta mindre instanser kan løses
+
+"Quicksort som binærsøk"
+
+function randomized-select(A,p,r,i)
+    if p == r
+       return A[p]
+    q = randomized-partition(A,p,r)
+    k = q - p + 1
+    if i == k
+       return A[q]
+    else if i < k
+       return randomized-partition(A,p,q - 1, i)
+    else
+       return randomized-partition(A, q + 1, r, i - k)
+
+T(n) = T(n / 2) + n
+T(n) = 2n - 1
+
+T_w(n) = Theta(n^2)
+T_a(n) = Theta(n)
+T_b(n) = Theta(n)
+
+Gjenta suksessen!
+... denne gangen for WC
+
+## 6:6 Select
+
+Trenger god pivot
+- Bruk ... Select?
+
+"Median av medianer"
+
+function partition-around(A,p,r,x)
+    i = 1
+    while A[i] != x
+       i += 1
+    exchange A[r] and A[i]
+    return partition(A,p,r)
+
+function select(A, p, r, i)
+    if P == r
+       return A[p]
+    ....
+
+
+function good-partiton(A, p , r)
+    n = r - p + 1
+    m = ceil(n / 5)
+    create B[1...m]
+    for i = 0 to m - 1
+       q = p + 5i
+       sort A[q...q + 4]
+       B[i] = A[q + 3]
+    x = select(B, 1, m, floor(m/2))
+    return partiton-around(A,p,r,x)
+
+T(n) = Theta(n)
