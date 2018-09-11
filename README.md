@@ -6,4 +6,3 @@ This repo is meant keep all assignments and lecture notes.
 
 ## Lecture notes
 <a href="./forelesninger/README.md">Lectures</a>
-Test
