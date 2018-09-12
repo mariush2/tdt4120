@@ -1,7 +1,6 @@
 # Lecture notes
 
-## <a href="./10sept.md">10. September</a>
-# Forelesning 10. september
+# Forelesning <a href="./10sept.md">10. September</a>
 
 ## Pensum
 - Kap. 8. Sorting in linear time
