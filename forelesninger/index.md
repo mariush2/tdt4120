@@ -71,7 +71,7 @@ _Trenger maks lg n! ja-nei-spørsmål_
 - T_b(n) = Omega(n)
 
 ## 2:6 Tellesortering
-```
+```julia
 function counting-sort(A, B, k)
     let C[0...k] be a new array
     for i = 0 to k
@@ -88,7 +88,7 @@ function counting-sort(A, B, k)
 Utvid veriområdet
 
 ## 3:6 Radikssortering
-```
+```julia
 function radix-sort(A, d)
     for i = 1 to d
        sort* A by digit d
@@ -100,7 +100,7 @@ Bryt grensen
 ... denne gang for AC
 
 ## 4:6 Bøttesortering
-```
+```julia
 function bucket-sort(A)
     n = A.length
     create B[0...n-1]
@@ -129,7 +129,7 @@ Induksjon/reduksjon
 - Anta mindre instanser kan løses
 
 "Quicksort som binærsøk"
-```
+```julia
 function randomized-select(A,p,r,i)
     if p == r
        return A[p]
@@ -159,7 +159,7 @@ Trenger god pivot
 - Bruk ... Select?
 
 "Median av medianer"
-```
+```julia
 function partition-around(A,p,r,x)
     i = 1
     while A[i] != x
