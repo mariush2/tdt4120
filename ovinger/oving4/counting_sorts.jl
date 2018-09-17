@@ -12,9 +12,10 @@ function counting-sort(A, B, k)
        C[A[j]] -= 1
 =#
 #Question 1
-function counting_sort_letters(A, position)
+#Done
+function counting_sort_letters(A::Array{String,1}, position::Int)
    k = 96
-   B = []
+   B::Array{String} = []
    C = zeros(26)
    for i = 1:length(A)
       push!(B, "")
@@ -33,18 +34,29 @@ function counting_sort_letters(A, position)
    return B
 end
 
-#println(counting_sort_letters(["ccc", "cba", "ca", "ab", "abc"], 2))
+println(counting_sort_letters(["ccc", "cba", "ca", "ab", "abc"], 2))
 
 #Question 2
+#=
+function counting-sort(A, B, k)
+    let C[0...k] be a new array
+    for i = 0 to k
+       C[i] = 0
+    for j = 1 to A.length
+       C[A[j]] += 1
+    for i = 1 to k
+       C[i] = C[i] + C[i - 1]
+    for j = A.length downto 1
+       B[C[A[j]]] = A[j]
+       C[A[j]] -= 1
+=#
 function counting_sort_length(A)
-   B = []
+   B::Array{String} = []
    C = []
    for i = 1:length(A)
       push!(B, "")
-      if length(C) < length(A[i])
-         for i = 1:length(A[i])-length(C)
-            push!(C, 0)
-         end
+      while length(C) < length(A[i])
+         push!(C, 0)
       end
    end
    for j = 1:length(A)
@@ -63,7 +75,26 @@ end
 #println(counting_sort_length(["bbbb", "aa", "aaaa", "ccc"]))
 
 #Question 3
+#Done
 function flexradix(A, max_length)
-   B = A
-   for i = 1:max_length
-      counting_sort_length(A)
+   for i = max_length:-1:1
+      rest::Array{String} = []
+      actual::Array{String} = []
+      for j = 1:length(A)
+         if i > length(A[j])
+            push!(rest, A[j])
+         else
+            push!(actual, A[j])
+         end
+      end
+      actual = counting_sort_letters(actual, i)
+      for j = 1:length(actual)
+         push!(rest, actual[j])
+      end
+      A = rest
+   end
+   return A
+end
+
+#println(flexradix(["kobra", "aggie", "agg", "kort", "hyblen"], 6))
+#Skal returnere ["agg", "aggie", "hyblen", "kobra", "kort"]

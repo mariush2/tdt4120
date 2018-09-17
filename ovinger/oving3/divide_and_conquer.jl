@@ -69,9 +69,7 @@ end
 
 function algdat_sort!(A)
     #Quicksort, works
-    println(A)
     qsort(A, 1, length(A))
-    println(A)
 end
 
 function find_median(A, lower, upper)
@@ -89,8 +87,8 @@ function find_median(A, lower, upper)
     end
 end
 
-println("\nTest\n")
-#println(find_median([3, 5, 7], 5, 7))
+#println("\nTest\n")
+println(find_median([3, 5, 7], 5, 7))
 #6.0  deltabell=[5, 7]
 
 #println(find_median([10, 20, 30], -100, 100))
