@@ -34,7 +34,7 @@ function counting_sort_letters(A::Array{String,1}, position::Int)
    return B
 end
 
-println(counting_sort_letters(["ccc", "cba", "ca", "ab", "abc"], 2))
+#println(counting_sort_letters(["ccc", "cba", "ca", "ab", "abc"], 2))
 
 #Question 2
 #=
@@ -50,14 +50,20 @@ function counting-sort(A, B, k)
        B[C[A[j]]] = A[j]
        C[A[j]] -= 1
 =#
+
+# Return ERROR in INGINIOUS
 function counting_sort_length(A)
-   B::Array{String} = []
+   B = []
    C = []
+   needed = 0
    for i = 1:length(A)
       push!(B, "")
-      while length(C) < length(A[i])
-         push!(C, 0)
+      if length(A[i]) > needed
+         needed = length(A[i])
       end
+   end
+   for i = 1:needed
+      push!(C, 0)
    end
    for j = 1:length(A)
       C[length(A[j])] = C[length(A[j])] + 1
@@ -72,7 +78,7 @@ function counting_sort_length(A)
    return B
 end
 
-#println(counting_sort_length(["bbbb", "aa", "aaaa", "ccc"]))
+println(counting_sort_length(["bbbbb", "aa", "aaaa", "ccc"]))
 
 #Question 3
 #Done
@@ -96,5 +102,5 @@ function flexradix(A, max_length)
    return A
 end
 
-#println(flexradix(["kobra", "aggie", "agg", "kort", "hyblen"], 6))
+println(flexradix(["kobra", "aggie", "agg", "kort", "hyblen"], 6))
 #Skal returnere ["agg", "aggie", "hyblen", "kobra", "kort"]
