@@ -53,7 +53,7 @@ Grådig valg + optimal delløsning gir optimal løsning
 ## 2:4 Eksempel: Ryggsekk
 __Input__: Verdier v1...vn, vekter w1... wn og en kapasitet W.
 
-__Output__: Indekser _i<sub>1</sub>..._i<sub>k</sub>_ og en fraksjon 0 <= _e_ <= 1 slik at _w<sub>i1</sub> + ... + w<sub>ik-1</sub> + e * w<sub>ik</sub> <= W_ og totalverdien _v<sub>i1</sub> + ... + e * v<sub>ik</sub> er_ maksimal
+__Output__: Indekser _i<sub>1</sub>...i<sub>k</sub>_ og en fraksjon 0 <= e <= 1 slik at _w<sub>i1</sub> + ... + w<sub>ik-1</sub> + e • w<sub>ik</sub> <= W_ og totalverdien _v<sub>i1</sub> + ... + e • v<sub>ik</sub> er_ maksimal
 
 - Fra {0,1} til brøk
  - Velg alltid det med høyest kilopris
@@ -155,4 +155,4 @@ __Prøver en grådig algoritme__
 
 ### Korrekthet
 - Vil vise at det lønner seg å slå sammen de to sjeldneste nederst
- - Anta en vilkårlig annen løsning, med de sjeldneste lenger opp; Ser at bidragene viser at det er trygt å bytte plass slik at de sjeldneste er nederst. 
+ - Anta en vilkårlig annen løsning, med de sjeldneste lenger opp; Ser at bidragene viser at det er trygt å bytte plass slik at de sjeldneste er nederst.
