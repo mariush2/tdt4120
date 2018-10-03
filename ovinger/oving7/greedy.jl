@@ -24,30 +24,32 @@ MERK:
 hvor ai>ai+1 for i∈[1,n−1]. Altså i synkende rekkefølge
 =#
 
-# Oppgave 1
-#=
-Vi ønsker først å undersøke om problemet kan løses grådig. For å få til dette skal du implementere can_use_greedy(coins).
-
-coins er en liste med integer-verdier. Disse verdiene representerer ulike mynter. Funksjonen skal returnere true eller false, avhengig om man kan bruke en grådig løsning på listen med mynter.
-
-MERK! Funksjonen du skal implementere vil teste for en tilstrekkelig betingelse, og ikke en nødvendig betingelse. Det betyr at den vil aldri gi noen false positives, men vil kunne gi false negatives. Med andre ord vil can_use_greedy i noen tilfeller si at du ikke kan bruke en grådig algoritme, selv om det egentlig er mulig. Dette er tatt høyde for under testingen av implementasjonen din, og er ikke noe du trenger å ta hensyn til.
-
-Den tilstrekkelige betingelsen du skal teste for er som følger:
-∀ci∈C(ci / ci+1∈ℕ),hvorC=⟨c1,…,cn⟩,ci>ci+1 og 1≤i≤n−1
-
-Her er C et set med vilkårlig antall mynter
-=#
+# Oppgave 1, done
 function can_use_greedy(coins)
-    previous = coins[1]
-    for i = 2:length(coins)
-        t = round(previous / coins[i])
-        if previous < coins[i] && (t < 1 || t > length(coins))
+    for i = 1:length(coins) - 1
+        next = coins[i + 1]
+        if coins[i] > next && coins[i] % next != 0
             return false
-        else
-            previous = coins[i]
         end
     end
     return true
 end
+#println(can_use_greedy([120, 60, 30, 15, 5, 1]), ": should be true")
 
-println(can_use_greedy([100, 75, 50, 25, 5, 1]), ": should be false")
+# Oppgave 2
+#=
+For å løse problemet med en grådig algoritme skal du lage funksjonen min_coins_greedy(coins, value).
+
+coins er en liste med mynt-verdier og value er en verdi som skal deles opp i et antall mynter. Funksjonen skal returnere det minste antall mynter verdien kan deles opp i.
+
+Eksempel på hvordan funksjonen skal fungere:
+
+min_coins_greedy([1000,500,100,20,5,1],1226)
+6
+
+min_coins_greedy([1000,500,100,20,5,1],2567)
+9
+
+min_coins_greedy([1000,500,100,20,5,1],8)
+4
+=#
