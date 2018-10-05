@@ -53,3 +53,39 @@ min_coins_greedy([1000,500,100,20,5,1],2567)
 min_coins_greedy([1000,500,100,20,5,1],8)
 4
 =#
+
+function min_coins_greedy(coins, value)
+    # Basically, use the coins array to displace the value
+    used = 0
+    current_coin = 1
+    while value > 0
+        if value >= coins[current_coin]
+            value = value - coins[current_coin]
+            used = used + 1
+        else
+            current_coin = current_coin + 1
+        end
+    end
+    return used
+end
+
+function min_coins_dynamic(coins, value)
+    inf=1000000000
+    #For each time, check which of the coins are the better fit, aka which returns lowest x % y
+    used = 0
+    while value > 0
+        current_low = value
+        current_coin = 1
+        for coin in coins
+            if value % coin < current_low
+                current_low = value % coin
+                current_coin = coin
+            end
+        end
+        value = value - current_coin
+        used = used + 1
+    end
+    return used
+end
+
+println(min_coins_dynamic([1000, 500, 200, 100, 50, 20, 10, 5, 4, 3, 1],1027))
