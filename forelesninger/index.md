@@ -6,4 +6,4 @@
 
 ## Forelesning <a href="./1okt.md">1. Oktober</a>
 
-## Forelesning <a href="./8okt.md">8. Oktober</a>
+## Forelesning <a href="./8okt/index.md">8. Oktober</a>
