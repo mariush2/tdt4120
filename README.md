@@ -1,8 +1,8 @@
 # TDT4120 - Algdat
-This repo is meant keep all assignments and lecture notes.
+Dette repoet inneholder øvingene og forelesning notater fra TDT4120, høst 2018.
 
-## Assignments
-<a href="./ovinger/">Assignments</a>
+## Øvinger
+<a href="./ovinger/">Øvinger</a>
 
-## Lecture notes
-<a href="./forelesninger/">Lectures</a>
+## Forelesninger
+<a href="./forelesninger/">Forelesninger</a>
