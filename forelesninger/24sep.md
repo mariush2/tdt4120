@@ -1,4 +1,7 @@
-# Forelesning 10. september
+---
+title: Forelesning 24. September
+---
+# Forelesning 24. september
 
 ## Læringsmål
 - Forstå _delproblemgrafer_

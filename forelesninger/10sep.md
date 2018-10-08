@@ -1,3 +1,7 @@
+---
+title: Forelesning 10. September
+---
+
 # Forelesning 10. september
 
 ## Pensum

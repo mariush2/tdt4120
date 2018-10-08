@@ -1,3 +1,7 @@
+---
+title: Forelesning 8. Oktober
+---
+
 # Forelesning 8. oktober
 
 ## Pensum
