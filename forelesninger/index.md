@@ -1,8 +1,8 @@
 # Forelesningsnotater
 
-## Forelesning <a href="./10sept">10. September</a>
+## Forelesning <a href="./10sep">10. September</a>
 
-## Forelesning <a href="./24sept">24. September</a>
+## Forelesning <a href="./24sep">24. September</a>
 
 ## Forelesning <a href="./1okt">1. Oktober</a>
 
