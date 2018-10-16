@@ -144,6 +144,7 @@ function mst_kruskal(G, w)
   end
   return A
 ```
+
 | Operasjon     | Antall    | Kjøretid    |
 | ------------- |:---------:| -----------:|
 | MAKE-SET      | V         | O(1)        |
@@ -157,9 +158,8 @@ __Totalt O(E log(V))__
 
 # 4:4 Prims algoritme
 The two fundamental construction principles(P1 and P2) for shortest connection networks can be stated as follows:
-Principle 1:
-
-# Insert text
+Principle 1: Any isolated terminal can be connected to a nearest neighbor
+Principle 2: Any isolated fragment can be connected to nearest neighbor by a shortest available link
 
 - Kan implementeres vha. traversering
 - Der BFS bruker FIFO og DFS bruker LIFO, så bruker Prim en min-prioritets-kø
