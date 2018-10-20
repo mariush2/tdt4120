@@ -45,10 +45,9 @@ end
 #findclusters(E::Vector{Tuple{Int, Int, Int}}, n::Int, k::Int), tuple => (w, u, v), n = |V|, k = mengde klynger
 #Fungerer ikke ->
 function findclusters(E::Vector{Tuple{Int, Int, Int}}, n::Int, k::Int)
+  A::Array = []
   if length(E) == 0
-    A = [1]
-  else
-    A = []
+    push!(A, 1)
   end
   nodes::Vector{DisjointSetNode} = []
   for i = 1:n
