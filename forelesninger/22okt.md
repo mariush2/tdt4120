@@ -167,28 +167,34 @@ __Totalt: O(VE)__
 
 ---
 Om et estimat endres, så var tidligere slakking fra noden bortkastet.
-__Konklusjon:__
-Slakk kanter far v når v.d ikke kan forbedres.
+
+__Konklusjon:__ Slakk kanter fra v når v.d ikke kan forbedres.
+
 ---
-__Strategi 1 av 2:__
+### Strategi 1 av 2:
 Slakk kanter ut fra noder i topologisk sortert rekkefølge
 
 - Krever en retter asyklisk graf
 
-__Hvorfor blir det rett?__
+#### Hvorfor blir det rett?
 
 Når alle inn-kanter er slakket kan ikke noden forbedres og trygt velges som neste.
+
 ---
+
+
 ## Hva om vi vil ha sykler?
+
+
 ---
-__Strategi 2 av 2:__
+### Strategi 2 av 2:
 Velg den gjenværende med lavest estimat.
 
 - Stemmer ikke hvis vi har negative kanter!
 
-__Hvorfor blir dette rett?__
-
+#### Hvorfor blir dette rett?
 Gjenværende noder kan kun forbedres ved slakking fra andre gjenværende. Det laveste estimatet kan dermed ikke forbedres.
+
 ---
 
 ## 5:5 Dijkstras algoritme
