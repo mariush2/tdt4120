@@ -176,6 +176,7 @@ Slakk kanter ut fra noder i topologisk sortert rekkefølge
 - Krever en retter asyklisk graf
 
 __Hvorfor blir det rett?__
+
 Når alle inn-kanter er slakket kan ikke noden forbedres og trygt velges som neste.
 ---
 ## Hva om vi vil ha sykler?
@@ -186,6 +187,7 @@ Velg den gjenværende med lavest estimat.
 - Stemmer ikke hvis vi har negative kanter!
 
 __Hvorfor blir dette rett?__
+
 Gjenværende noder kan kun forbedres ved slakking fra andre gjenværende. Det laveste estimatet kan dermed ikke forbedres.
 ---
 
