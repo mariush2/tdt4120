@@ -95,7 +95,10 @@ end
 ```
 NB! Sykler fungerer ikke med denne modellen
 
-- God mental modell for DP, enkel
+- God mental modell for DP; erkeeksempel
+- Delproblemer er avstander fra s til innnaboer; velg den som gir deg best resultat
+- Bottom-up: Kantslakking av inn-kanter i topologisk sortert rekkefølge (såkalt pulling)
+- Gir samme svar: Kantslakking av ut-kanter i topologisk sortert rekkefølge (såkalt reaching)
 
 
 | Operasjon            | Antall    | Kjøretid     |
@@ -154,11 +157,11 @@ function bellman_ford(G, w, s)
   return true
 ```
 
-| Operasjon      | Antall | Kjøretid  |
+| Operasjon      | Antall | Kjøretid |
 | -------------- |:------:| --------:|
 | Initialisering | 1      | Theta(V) |
 | RELAX          | V - 1  | Theta(E  |
-| RELAX          | O(V)   | Theta(   |
+| RELAX          | O(V)   | Theta(E) |
 
 __Totalt: O(VE)__
 
