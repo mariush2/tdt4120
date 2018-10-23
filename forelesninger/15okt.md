@@ -201,3 +201,5 @@ __Totalt: O(E log(V))__
 Dette gjelder om vi bruker en binærhaug
 
 Kan forbedres med en Fib.haug (Fib heap). Blir da O(E + V log(V)).
+
+{% include mathjax.html %}

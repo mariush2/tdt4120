@@ -226,3 +226,5 @@ __Total: O(V lg V + E lg V)__
 Med binærheap: bedre enn lineært søk for E = o(V<sup>2</sup>/lg V)
 
 Med Fibonacci-heap: DECREASE-KEY er O(1): vi får O(V lg V + E)
+
+{% include mathjax.html %}

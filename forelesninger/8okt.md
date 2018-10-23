@@ -129,3 +129,5 @@ Noder oppdages før og avsluttes etter sine etterkommere
 
 - Stigende discover-tid: Ikke trygt
 - Synkende finish-tid: Trygt
+
+{% include mathjax.html %}
