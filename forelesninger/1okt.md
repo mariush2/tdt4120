@@ -1,7 +1,5 @@
 ---
 title: Forelesning 1. Oktober
-layout: post
-mathjax: true
 ---
 # Forelesning 1. oktober
 

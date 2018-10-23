@@ -1,7 +1,5 @@
 ---
 title: Forelesning 10. September
-layout: post
-mathjax: true
 ---
 
 # Forelesning 10. september
@@ -183,3 +181,5 @@ function good-partiton(A, p , r)
     return partiton-around(A,p,r,x)
 
 T(n) = Theta(n)
+
+{% include mathjax.html %}

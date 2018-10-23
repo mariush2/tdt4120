@@ -1,7 +1,5 @@
 ---
 title: Forelesning 15. Oktober
-layout: post
-mathjax: true
 ---
 
 # Forelesning 10. oktober - Minimale spenntrær
@@ -203,3 +201,5 @@ __Totalt: O(E log(V))__
 Dette gjelder om vi bruker en binærhaug
 
 Kan forbedres med en Fib.haug (Fib heap). Blir da O(E + V log(V)).
+
+{% include mathjax.html %}

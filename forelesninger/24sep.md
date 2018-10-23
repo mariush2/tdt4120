@@ -1,7 +1,5 @@
 ---
 title: Forelesning 24. September
-layout: post
-mathjax: true
 ---
 # Forelesning 24. september
 
@@ -117,3 +115,4 @@ function knapsack(n, W)
      y = k[i - 1, j - w_i] + v_i
      k[i,j] = max(x,y)
 ```
+{% include mathjax.html %}
