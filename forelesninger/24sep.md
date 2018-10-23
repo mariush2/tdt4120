@@ -1,7 +1,7 @@
 ---
 title: Forelesning 24. September
 ---
-{% include /mathjax.html %}
+{% include mathjax.html %}
 # Forelesning 24. september
 
 ## Læringsmål
