@@ -1,5 +1,7 @@
 ---
 title: Forelesning 1. Oktober
+layout: post
+mathjax: true
 ---
 # Forelesning 1. oktober
 
@@ -159,5 +161,3 @@ __Prøver en grådig algoritme__
 ### Korrekthet
 - Vil vise at det lønner seg å slå sammen de to sjeldneste nederst
  - Anta en vilkårlig annen løsning, med de sjeldneste lenger opp; Ser at bidragene viser at det er trygt å bytte plass slik at de sjeldneste er nederst.
-
-{% include mathjax.html %}
