@@ -181,3 +181,5 @@ function good-partiton(A, p , r)
     return partiton-around(A,p,r,x)
 
 T(n) = Theta(n)
+
+{% include mathjax.html %}
