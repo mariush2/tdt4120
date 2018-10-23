@@ -103,9 +103,9 @@ NB! Sykler fungerer ikke med denne modellen
 
 | Operasjon            | Antall    | Kjøretid     |
 | -------------------- |:---------:| ------------:|
-| Topologisk-sortering | 1         | $\theta$(V + E) |
-| Initialisering       | 1         | $\theta$(V)     |
-| RELAX                | E         | $\theta$(1)     |
+| Topologisk-sortering | 1         | $\theta(V + E)$ |
+| Initialisering       | 1         | $\theta(V)$     |
+| RELAX                | E         | $\theta(1)$     |
 
 Kantslakking er altså en oppspalting av miniums-operasjoner fra dekomponeringen. Vi har foreløpig ikke vært så kreative med hvordan vi har brukt det - la oss studere teknikken i litt mer detalj.
 
@@ -159,9 +159,9 @@ function bellman_ford(G, w, s)
 
 | Operasjon      | Antall | Kjøretid |
 | -------------- |:------:| --------:|
-| Initialisering | 1      | Theta(V) |
-| RELAX          | V - 1  | Theta(E  |
-| RELAX          | O(V)   | Theta(E) |
+| Initialisering | 1      | $\theta(V)$ |
+| RELAX          | V - 1  | $\theta(E)$ |
+| RELAX          | O(V)   | $\theta(E)$ |
 
 __Totalt: O(VE)__
 
@@ -216,8 +216,8 @@ end
 
 | Operasjon      | Antall | Kjøretid |
 | -------------- |:------:| --------:|
-| Initialisering | 1      | Theta(V) |
-| BUILD-HEAP     | 1      | Theta(V) |
+| Initialisering | 1      | $\theta(V)$ |
+| BUILD-HEAP     | 1      | $\theta(V)$ |
 | EXTRACT-MIN    | V      | O(lg V)  |
 | DECREASE-KEY   | E      | O(lg V)  |
 

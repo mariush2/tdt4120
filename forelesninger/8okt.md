@@ -116,8 +116,8 @@ function dfs_visit(G, vertex)
 Noder oppdages før og avsluttes etter sine etterkommere
 
 ## Kjøretid
-- DFS - Worst Case: Theta(V + E), Best case: Theta(V + E)
-- BFS - Worst Case: Theta(V + E), Best case: Theta(1)
+- DFS - Worst Case: $\theta$(V + E), Best case: $\theta$(V + E)
+- BFS - Worst Case: $\theta$(V + E), Best case: $\theta$(1)
 
 # 4:4 Topologisk sortering
 - Gi nodene en rekkefølge

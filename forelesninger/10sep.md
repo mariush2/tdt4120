@@ -64,12 +64,12 @@ _Trenger maks lg n! ja-nei-spørsmål_
 
 #### Worstcase
 - T_w(n) = O(infinity)
-- T_w(n) = Theta(?)
+- T_w(n) = $\theta$(?)
 - T_w(n) = Omega(n lg n)
 
 #### Bestcase
 - T_b(n) = O(infinity)
-- T_b(n) = Theta(?)
+- T_b(n) = $\theta$(?)
 - T_b(n) = Omega(n)
 
 ## 2:6 Tellesortering
@@ -85,7 +85,7 @@ function counting-sort(A, B, k)
        B[C[A[j]]] = A[j]
        C[A[j]] -= 1
 
-### T(n) = Theta(n + k)
+### T(n) = $\theta$(n + k)
 Utvid veriområdet
 
 ## 3:6 Radikssortering
@@ -93,7 +93,7 @@ function radix-sort(A, d)
     for i = 1 to d
        sort* A by digit d
 
-T(n) = Theta(d * (n + k))
+T(n) = $\theta$(d * (n + k))
 
 Bryt grensen
 ... denne gang for AC
@@ -110,9 +110,9 @@ function bucket-sort(A)
        sort list B[i] #Bruker insertion sort
     concatenate B[0]...B[n - 1]
 
-T_w(n) = Theta(n^2)
-T_a(n) = Theta(n)
-T_b(n) = Theta(n)
+T_w(n) = $\theta$(n^2)
+T_a(n) = $\theta$(n)
+T_b(n) = $\theta$(n)
 
 Bryt grensen for AC
 ... ved å begrense problemet
@@ -142,9 +142,9 @@ function randomized-select(A,p,r,i)
 T(n) = T(n / 2) + n
 T(n) = 2n - 1
 
-T_w(n) = Theta(n^2)
-T_a(n) = Theta(n)
-T_b(n) = Theta(n)
+T_w(n) = $\theta$(n^2)
+T_a(n) = $\theta$(n)
+T_b(n) = $\theta$(n)
 
 Gjenta suksessen!
 ... denne gangen for WC
@@ -180,6 +180,6 @@ function good-partiton(A, p , r)
     x = select(B, 1, m, floor(m/2))
     return partiton-around(A,p,r,x)
 
-T(n) = Theta(n)
+T(n) = $\theta$(n)
 
 {% include mathjax.html %}
