@@ -83,7 +83,7 @@ Dette kalles reaching, istedenfor pulling. Som i vanlig DP, husk valg som tas. D
 Flytter init og min til en egen funksjon, refaktor!
 
 ```julia
-function dag-shortest-path(G, w, s)
+function dag_shortest_path(G, w, s)
   topologically sort the vertices of G
   initialize-single-source(G, s)
   for each vertex u, in topsort order
@@ -136,7 +136,7 @@ __Løsning:__
 Slakk absolutt alle kanter k - 1 ganger!
 ---
 
-Hvis vi lar k = |V| så får alle noder rett estimat
+Hvis vi lar k = \|V\| så får alle noder rett estimat
 
 ---
 
