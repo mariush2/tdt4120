@@ -1,7 +1,6 @@
 ---
 title: Forelesning 22. Oktober
 ---
-
 # Forelesning 22. oktober Kortest vei fra én til alle
 
 ## Pensum

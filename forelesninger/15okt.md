@@ -2,7 +2,7 @@
 title: Forelesning 15. Oktober
 ---
 
-# Forelesning 10. oktober - Minimale spenntrær
+# Forelesning 15. oktober - Minimale spenntrær
 Noder med vekter (weighted-nodes).
 
 
