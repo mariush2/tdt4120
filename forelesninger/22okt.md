@@ -103,9 +103,9 @@ NB! Sykler fungerer ikke med denne modellen
 
 | Operasjon            | Antall    | Kjøretid     |
 | -------------------- |:---------:| ------------:|
-| Topologisk-sortering | 1         | $\theta$(V + E) |
-| Initialisering       | 1         | $\theta$(V)     |
-| RELAX                | E         | $\theta$(1)     |
+| Topologisk-sortering | 1         | \theta(V + E) |
+| Initialisering       | 1         | \theta(V)     |
+| RELAX                | E         | \theta(1)     |
 
 Kantslakking er altså en oppspalting av miniums-operasjoner fra dekomponeringen. Vi har foreløpig ikke vært så kreative med hvordan vi har brukt det - la oss studere teknikken i litt mer detalj.
 
