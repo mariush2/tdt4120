@@ -17,3 +17,5 @@
 ## <a href="./oving8">Øving 8</a>
 
 ## <a href="./oving9">Øving 9</a>
+
+## <a href="./oving10">Øving 10</a>
