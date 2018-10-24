@@ -19,6 +19,8 @@ title: Forelesning 22. Oktober
 - Forstå kobling mellom __DAG-SHORTEST-PATH__ og __DP__
 - Forstå __DJIKSTRA__
 
+---
+
 1. Dekomponering
 2. DAG-Shortest-Path
 3. Kantslakking
