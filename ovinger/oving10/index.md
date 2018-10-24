@@ -57,16 +57,19 @@ end
 
 
 function bellman_ford!(graph, start)
-  initialize_single_source!(graph, strat)
-  for i = 1:length(graph)
-    u = graph[i]
-    for v in u.neighbours
-      relax!(u, v[1], v[2])
+  initialize_single_source!(graph, start)
+  for i = 1:length(graph) - 1
+    for j = 1:length(graph)
+      u = graph[j]
+      for v in u.neighbours
+        relax!(u, v[1], v[2])
+      end
     end
   end
   for i = 1:length(graph)
     u = graph[i]
     for v in u.neighbours
+      #to_node.risk > from_node.risk + (cost/to_node.probability)
       if v[1].risk > u.risk + (v[2]/v[1].probability)
         return false
       end
