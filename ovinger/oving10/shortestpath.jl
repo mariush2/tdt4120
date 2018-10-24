@@ -2,7 +2,7 @@ using DataStructures
 
 mutable struct Node
     ip::Int
-    neighbours::Array{::Tuple{Node,Int}}
+    neighbours::Array{Tuple{Node,Int}}
     risk::Union{Float64, Nothing}
     predecessor::Union{Node, Nothing}
     probability::Float64
