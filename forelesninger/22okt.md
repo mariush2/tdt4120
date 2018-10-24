@@ -113,7 +113,7 @@ Kantslakking er altså en oppspalting av miniums-operasjoner fra dekomponeringen
 
 # 3:5 Kantslakking
 
-$$\delta(s, v) <= v.d$$
+$$\delta(s, v) \leq v.d$$
 
 Kantslakking; problematisk når vi har flere strukne kanter i en sti.
 
@@ -128,7 +128,7 @@ Se side 650 for flere slektninger av denne egenskapen.
 - Å finne den effektivt: Uløst (NP-hardt)
 
 ---
-La $<v_1, v_2, \dots , v_k_>$ være korteste vei til $z$.
+La $\langlev_1, v_2, \dots , v_k_\rangle$ være korteste vei til $z$.
 Vi vil slakke kantene langs stien, men kjenner ikke rekkefølgen.
 
 __Løsning:__
