@@ -55,7 +55,7 @@ $alpha(n)$ :=
 1.  hvis $n = 3$
 2.  hvis $4 \leqslant n \leqslant 7$
 3.  hvis $8 \leqslant n \leqslant 2047$
-4.  hvis $2048 \leqslant n \leqslant 16^512$
+4.  hvis $2048 \leqslant n \leqslant 16^{512}$
 
 ---
 
