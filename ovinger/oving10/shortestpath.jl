@@ -26,9 +26,11 @@ end
 
 function extract_min(all)
   min = all[1]
+  minrisk = all[1].risk
   for node in all
-    if node.risk < min
+    if node.risk < minrisk
       min = node
+      minrisk = node.risk
     end
   end
   return min
@@ -43,10 +45,10 @@ function dijkstra!(graph, start)
   end
   while !isempty(nodes)
     from = extract_min(nodes) # Korteste stien til start
-    splice!(nodes, from)
+    filter!(e->e≠from,nodes)
     for neighbour in from.neighbours
       #type(neighbour[1]) = Node, type(neighbour[2]) = cost
-      relax(from, neighbour[1], neighbour[2])
+      relax!(from, neighbour[1], neighbour[2])
     end
   end
 end
@@ -54,10 +56,10 @@ end
 
 function bellman_ford!(graph, start)
   initialize_single_source!(graph, strat)
-  for i = 1:length(graph) - 1
+  for i = 1:length(graph)
     u = graph[i]
     for v in u.neighbours
-      relax(u, v[1], v[2])
+      relax!(u, v[1], v[2])
     end
   end
   for i = 1:length(graph)
