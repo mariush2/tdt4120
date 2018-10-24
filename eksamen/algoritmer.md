@@ -103,6 +103,7 @@ function dfs_visit(G, vertex)
   time = time + 1
   vertex.f = time #Finish time
 ```
+
 $$
 Worst\:case: \Theta(V + E)\\
 Best\:case: \Theta(V + E)\\
