@@ -71,7 +71,7 @@ function bfs(G, s)
 
 $$
 Worst\:case: \Theta(V + E)\\
-Best\:case: \Theta(V)
+Best\:case: \Theta(V)\\
 $$
 
 ## Depth-first-search
@@ -104,8 +104,8 @@ function dfs_visit(G, vertex)
   vertex.f = time #Finish time
 ```
 $$
-Worst\:Case: \Theta(V + E)\\
-Best\:case: \Theta(V + E)
+Worst\:case: \Theta(V + E)\\
+Best\:case: \Theta(V + E)\\
 $$
 
 ## Generisk MST
