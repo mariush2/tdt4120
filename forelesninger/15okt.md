@@ -47,7 +47,7 @@ function find_set(x)
 end
 ```
 
-m operasjoner: $O(m • \alpha(n))$. (med komprimering og union by rank)
+$m$ operasjoner: $O(m \times \alpha(n))$. (med komprimering og union by rank)
 
 $\alpha(n)$ :=
 
@@ -70,7 +70,7 @@ __Vi innfører nå vekter på kantene. Disse omtales også som lengder eller kos
 
 __Input:__ En urettet graf $G = (V, E)$ og en vekt-funksjon $w: E \rightarrow R$
 
-__Output:__ En asyklisk delmengde T C= E som kobler sammen nodene i $V$ og minimerer vektsummen.
+__Output:__ En asyklisk delmengde $T ⊆ E$ som kobler sammen nodene i $V$ og minimerer $\sum_e∈T w(e)$.
 
 - Vi utvider en kantmengde (partiellløsning) gradvis
 - Invariant: Kantmengden utgjør en del av minimalt spenntre
