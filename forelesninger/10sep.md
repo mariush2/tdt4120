@@ -35,7 +35,7 @@ title: Forelesning 10. September
 
 $$m = \log n\\T(2^{m/2}) = m\\\sqrt{n} = n^{1/2} = (2^m)^{1/2} = 2^{m/2}\\S(m) ≔ T(n) = T(2^m)\\T(2^{m/2}) = S(m/2)\\S(m/2) = m\\S(m) = 2m\\T(n) = 2 \log n$$
 
-## $T(n) = 2T(\sqrt{n}) + \log n
+## $T(n) = 2T(\sqrt{n}) + \log n$
 
 $$m = \log n\\T(2^m) = 2T(2^(m/2) + m\\S(m) := T(n) = T(2^m)\\T(2^m/2) = S(m/2)\\S(m) = 2S(m/2) + m (Master teoremet)\\S(m) = m \log m + m\\T(n) = \log n \log \log n + \log n$$
 
