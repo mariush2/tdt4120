@@ -23,12 +23,12 @@ title: Forelesning 10. September
 
 ## Rangering i lineær tid
 
--1 Sorteringsgrense
--2 Tellesortering
--3 Radikssortering
--4 Bøttesortering
--5 Randomized Select
--6 Select
+1. Sorteringsgrense
+2 Tellesortering
+3. Radikssortering
+4. Bøttesortering
+5. Randomized Select
+6. Select
 
 ## $T(\sqrt{n}) = lg n$
 ### $T(n^{1/2}) = lg n$
@@ -46,10 +46,10 @@ $$m = lg n\\T(2^m) = 2T(2^(m/2) + m\\S(m) := T(n) = T(2^m)\\T(2^m/2) = S(m/2)\\S
 _Trenger maks lg n! ja-nei-spørsmål_
 
 
-### $2^{T(n)} >= lg n!$
+### $2^{T(n)} \geq lg n!$
 - Nedre grense for verste tilfelle
 - Fra Stirlings approksimasjon: $n! \geq (n / e)^n$
-- $\Rightarrow lg n! \geq n lg n - n lg e$
+- $\Rightarrow lg n! \geq n lg n - n lg e$ \
 
 #### Worstcase
 $$T_w(n) = O(\infty)\\
