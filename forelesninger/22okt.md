@@ -35,7 +35,7 @@ Vi antar så induktivt at vi har funnet $\delta(s, -)$ for inn-naboer.
 Inn-nabo $x$ gir mulig stilengde $\delta(s, x) + w(x, t)$; velg minium!
 
 
-Vi får altså at $\delta(s, t) = min{\delta(s, u) + w(u, t), \delta(s, v) + w(v, t)}$
+Vi får altså at $\delta(s, t) = min\{\delta(s, u) + w(u, t), \delta(s, v) + w(v, t)\}$
 
 
 Video startet;
