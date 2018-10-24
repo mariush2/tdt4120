@@ -33,7 +33,7 @@ title: Forelesning 10. September
 ## $T(\sqrt{n}) = lg n$
 ### $T(n^{1/2}) = lg n$
 
-$$m &= lg n\\T(2^{m/2}) &= m\\\sqrt{n} &= n^{1/2} = (2^m)^{1/2} = 2^{m/2}\\S(m) &≔ T(n) = T(2^m)\\T(2^{m/2}) &= S(m/2)\\S(m/2) &= m\\S(m) &= 2m\\T(n) &= 2 lg n$$
+$$m = lg n\\T(2^{m/2}) = m\\\sqrt{n} = n^{1/2} = (2^m)^{1/2} = 2^{m/2}\\S(m) ≔ T(n) = T(2^m)\\T(2^{m/2}) = S(m/2)\\S(m/2) = m\\S(m) = 2m\\T(n) = 2 lg n$$
 
 ## T(n) = 2T(sqrt(n)) + lg n
 
