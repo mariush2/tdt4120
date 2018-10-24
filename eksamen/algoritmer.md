@@ -69,10 +69,10 @@ function bfs(G, s)
     u.color = BLACK
 ```
 
-$
-Worst Case: \Theta(V + E)\\
-Best case: \Theta(V)
-$
+$$
+Worst\:case: \Theta(V + E)\\
+Best\:case: \Theta(V)
+$$
 
 ## Depth-first-search
 
@@ -103,10 +103,10 @@ function dfs_visit(G, vertex)
   time = time + 1
   vertex.f = time #Finish time
 ```
-$
-Worst Case: \Theta$(V + E)\\
-Best case: \Theta$(V + E)
-$
+$$
+Worst\:Case: \Theta(V + E)\\
+Best\:case: \Theta(V + E)
+$$
 
 ## Generisk MST
 
