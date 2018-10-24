@@ -10,8 +10,8 @@ title: Forelesning 10. September
 
 
 ## Læringsmål
-- Forstå hvorfor _sammenligningsbasert sortering_ har en _worst-case_ på Omega(n lgn)
-- Vite hva en _stabilsorteringsalgoritme_ er
+- Forstå hvorfor _sammenligningsbasert sortering_ har en _worst-case_ på Omega(n \logn)
+- Vite hva en _stabilsorteringsa\logoritme_ er
 - Forstå **COUNTING-SORT**, og hvorfor den er stabil
 - Forstå **RADIX-SORT**, og hvorfor den trenger en stabil subrutine
 - Forstå **BUCKET-SORT**
@@ -30,31 +30,31 @@ title: Forelesning 10. September
 5. Randomized Select
 6. Select
 
-## $T(\sqrt{n}) = lg n$
-### $T(n^{1/2}) = lg n$
+## $T(\sqrt{n}) = \log n$
+### $T(n^{1/2}) = \log n$
 
-$$m = lg n\\T(2^{m/2}) = m\\\sqrt{n} = n^{1/2} = (2^m)^{1/2} = 2^{m/2}\\S(m) ≔ T(n) = T(2^m)\\T(2^{m/2}) = S(m/2)\\S(m/2) = m\\S(m) = 2m\\T(n) = 2 lg n$$
+$$m = \log n\\T(2^{m/2}) = m\\\sqrt{n} = n^{1/2} = (2^m)^{1/2} = 2^{m/2}\\S(m) ≔ T(n) = T(2^m)\\T(2^{m/2}) = S(m/2)\\S(m/2) = m\\S(m) = 2m\\T(n) = 2 \log n$$
 
-## T(n) = 2T(sqrt(n)) + lg n
+## $T(n) = 2T(\sqrt{n}) + \log n
 
-$$m = lg n\\T(2^m) = 2T(2^(m/2) + m\\S(m) := T(n) = T(2^m)\\T(2^m/2) = S(m/2)\\S(m) = 2S(m/2) + m (Master teoremet)\\S(m) = m lg m + m\\T(n) = lg n lg lg n + lg n$$
+$$m = \log n\\T(2^m) = 2T(2^(m/2) + m\\S(m) := T(n) = T(2^m)\\T(2^m/2) = S(m/2)\\S(m) = 2S(m/2) + m (Master teoremet)\\S(m) = m \log m + m\\T(n) = \log n \log \log n + \log n$$
 
 
 ## 1:6 Sorteringsgrensen
 "Tenk på en permutasjon"
 ...av $n!$ mulige
-_Trenger maks lg n! ja-nei-spørsmål_
+_Trenger maks $\log n!$ ja-nei-spørsmål_
 
 
-### $2^{T(n)} \geq lg n!$
+### $2^{T(n)} \geq \log n!$
 - Nedre grense for verste tilfelle
 - Fra Stirlings approksimasjon: $n! \geq (n / e)^n$
-- $\Rightarrow lg n! \geq n lg n - n lg e$ \
+- $\Rightarrow \log n! \geq n \log n - n \log e$ \
 
 #### Worstcase
 $$T_w(n) = O(\infty)\\
 $$T_w(n) = \theta(?)\\
-$$T_w(n) = \Omega(n lg n)\\
+$$T_w(n) = \Omega(n \log n)\\
 
 #### Bestcase
 $$T_b(n) = O(\infty)\\
