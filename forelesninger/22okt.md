@@ -128,14 +128,14 @@ Se side 650 for flere slektninger av denne egenskapen.
 - Å finne den effektivt: Uløst (NP-hardt)
 
 ---
-La $\langlev_1, v_2, \dots , v_k_\rangle$ være korteste vei til $z$.
+La $\langle v_1, v_2, \ldots , v_k\rangle$ være korteste vei til $z$.
 Vi vil slakke kantene langs stien, men kjenner ikke rekkefølgen.
 
 __Løsning:__
 Slakk absolutt alle kanter $k - 1$ ganger!
 ---
 
-Hvis vi lar $k = |V|$ så får alle noder rett estimat
+Hvis vi lar $k = \|V\|$ så får alle noder rett estimat
 
 ---
 
