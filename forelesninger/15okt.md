@@ -49,7 +49,7 @@ end
 
 m operasjoner: $O(m • \alpha(n))$. (med komprimering og union by rank)
 
-$alpha(n)$ :=
+$\alpha(n)$ :=
 
 0.  hvis $0 \leqslant n \leqslant 2$
 1.  hvis $n = 3$
@@ -68,9 +68,9 @@ Hva er et spenn tre?
 __Vi innfører nå vekter på kantene. Disse omtales også som lengder eller kostnader.__
 
 
-__Input:__ En urettet graf $G = (V, E)$ og en vekt-funksjon $w: E -> R$
+__Input:__ En urettet graf $G = (V, E)$ og en vekt-funksjon $w: E \rightarrow R$
 
-__Output:__ En asyklisk delmengde T C= E som kobler sammen nodene i V og minimerer vektsummen.
+__Output:__ En asyklisk delmengde T C= E som kobler sammen nodene i $V$ og minimerer vektsummen.
 
 - Vi utvider en kantmengde (partiellløsning) gradvis
 - Invariant: Kantmengden utgjør en del av minimalt spenntre
