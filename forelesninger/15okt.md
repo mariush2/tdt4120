@@ -47,15 +47,16 @@ function find_set(x)
 end
 ```
 
-m operasjoner: O(m • alpha(n)). (med komprimering og union by rank)
+m operasjoner: $O(m • \alpha(n))$. (med komprimering og union by rank)
 
-alpha(n) :=
+$alpha(n)$ :=
 
-0.  hvis 0 <= n <= 2,
-1.  hvis n = 3
-2.  hvis 4 <= n <= 7
-3.  hvis 8 <= n <= 2047
-4.  hvis 2048 <= n <= 16<sup>512</sup>
+0.  hvis $0 \leqslant n \leqslant 2$
+1.  hvis $n = 3$
+2.  hvis $4 \leqslant n \leqslant 7$
+3.  hvis $8 \leqslant n \leqslant 2047$
+4.  hvis $2048 \leqslant n \leqslant 16^512$
+
 ---
 
 # 2:4 Generisk MST
@@ -67,7 +68,7 @@ Hva er et spenn tre?
 __Vi innfører nå vekter på kantene. Disse omtales også som lengder eller kostnader.__
 
 
-__Input:__ En urettet graf G = (V,E) og en vekt-funksjon _w_: E -> R
+__Input:__ En urettet graf $G = (V, E)$ og en vekt-funksjon $w: E -> R$
 
 __Output:__ En asyklisk delmengde T C= E som kobler sammen nodene i V og minimerer vektsummen.
 
@@ -147,12 +148,12 @@ function mst_kruskal(G, w)
 
 | Operasjon     | Antall    | Kjøretid    |
 | ------------- |:---------:| -----------:|
-| MAKE-SET      | V         | O(1)        |
-| Sortering     | 1         | O(E log(E)) |
-| FIND-SET      | O(E)      | O(log(V))   |
-| UNION         | O(E)      | O(log(V))   |
+| MAKE-SET      | $V$         | $O(1)$        |
+| Sortering     | $1$         | $O(E log(E))$ |
+| FIND-SET      | $O(E)$      | $O(log(V))$   |
+| UNION         | $O(E)$      | $O(log(V))$   |
 
-__Totalt O(E log(V))__
+$$Totalt O(E log(V))$$
 
 ---
 
@@ -190,16 +191,16 @@ function mst_prim(G, w, r)
 - Beste kanter for grå noder også uthevet
 - Boka uthever bare kentene i spenntreet
 
-| Operasjon      | Antall    | Kjøretid    |
-| -------------- |:---------:| -----------:|
-| BUILD-MIN-HEAP | 1         | O(V)        |
-| EXTRACT-MIN    | V         | O(log(V))   |
-| DECREASE-KEY   | E         | O(log(V))   |
+| Operasjon      | Antall  | Kjøretid    |
+| -------------- |:-------:| -----------:|
+| BUILD-MIN-HEAP | $1$     | $O(V)$      |
+| EXTRACT-MIN    | $V$     | $O(log(V))$ |
+| DECREASE-KEY   | $E$     | $O(log(V))$ |
 
-__Totalt: O(E log(V))__
+$$Totalt: O(E log(V))$$
 
 Dette gjelder om vi bruker en binærhaug
 
-Kan forbedres med en Fib.haug (Fib heap). Blir da O(E + V log(V)).
+Kan forbedres med en Fib.haug (Fib heap). Blir da $O(E + V log(V))$.
 
 {% include mathjax.html %}

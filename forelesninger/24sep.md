@@ -83,21 +83,21 @@ function(A)
 ## 3:5 Eksempel: Stavkutting
 _Rod-cutting problem_
 
-__Input:__ En lengde _n_ og priser _p_ for lengder _i_ = 1...n
-__Output:__ Lengder l_1 ... l_k der summen av lengder l_1 + ... + l_k er n og r_n = p_l_1 + ... + p_l_k totalprisen er maksimal
+__Input:__ En lengde $n$ og priser $p$ for lengder $i = 1 … n$
+__Output:__ Lengder $l_1, ⋯ , l_k$ der summen av lengder $l_1 + ⋯ + l_k$ er $n$ og $r_n = p_l_1 + ⋯ + p_l_k$ totalprisen er maksimal
 
 
 ## Sjekk ut LCS
 
 ## 5:5 Eksempel: Ryggsekk
 
-__Input__: Verdier v_1....v_n, vekter w_1....w_n og en kapasitet W.
-__Output__: Indekser i_1...i_k slik at w_i_1 +...+ w_i_k <= W
+__Input__: Verdier $v_1 ⋯ v_n$ vekter $w_1 ⋯ w_n$ og en kapasitet $W$.
+__Output__: Indekser $i_1 ⋯ i_k$ slik at $w_i_1 + ⋯ + w_i_k \leqslant W$
 
 Dekomponeringen er så enkel at vi enten tar med objektet, eller ikke.
-Objekt _n_ bidrar med verdi v_n
-Ser nå bare på ojbketer 1...n-1
-Objekt _n_ bruker opp w_n av W
+Objekt $n$ bidrar med verdi $v_n$
+Ser nå bare på objekter $1 \cdots n-1$
+Objekt $n$ bruker opp $w_n$ av $W$
 
 Lagrer alle delløsningene i en tabell på samme måte som før.
 
