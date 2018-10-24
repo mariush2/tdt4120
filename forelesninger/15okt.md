@@ -156,7 +156,7 @@ function mst_kruskal(G, w)
 | FIND-SET      | $O(E)$      | $O(log(V))$   |
 | UNION         | $O(E)$      | $O(log(V))$   |
 
-$$Totalt O(E log(V))$$
+$$Totalt:\:O(E log(V))$$
 
 ---
 

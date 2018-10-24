@@ -56,7 +56,7 @@ Grådig valg + optimal delløsning gir optimal løsning
 ## 2:4 Eksempel: Ryggsekk
 __Input__: Verdier v1...vn, vekter w1... wn og en kapasitet W.
 
-__Output__: Indekser _i<sub>1</sub>...i<sub>k</sub>_ og en fraksjon 0 <= e <= 1 slik at _w<sub>i1</sub> + ... + w<sub>ik-1</sub> + e • w<sub>ik</sub> <= W_ og totalverdien _v<sub>i1</sub> + ... + e • v<sub>ik</sub> er_ maksimal
+__Output__: Indekser $i_1, \cdots , i_k$ og en fraksjon $0 ⩽ e ⩽ 1$ slik at $w_i1 + \cdots + w_ik-1 + e × w_ik ⩽ W$ og totalverdien $v_i1 + ⋯ + e × v_ik$ er maksimal
 
 - Fra {0,1} til brøk
  - Velg alltid det med høyest kilopris
@@ -70,7 +70,7 @@ __Output__: Indekser _i<sub>1</sub>...i<sub>k</sub>_ og en fraksjon 0 <= e <= 1 
 
 ## 2:5 Eksempel: Aktivitetsutvalg
 
-__Input__: Intervall [s<sub>1</sub>,f<sub>1</sub>,...[s<sub>n</sub>,f<sub>n</sub>)
+__Input__: Intervall $\[s_1,f_1,\cdots\:\[s_n,f_n)$
 
 __Output__: Flest mulig ikke-overlappende intervaller
 
@@ -126,9 +126,9 @@ function greedy_activity_selector(s, f)
 - Vis at grådighet er minst like bra som alle andre algoritmer for hvert trinn; det følger at den gir en optimal løsning
 
 ## 4:4 Eksempel: Huffman
-__Input__: Alfabet C = {c,...} med frekvenser _c.freq_
+__Input__: Alfabet $C = \\{c,...\\}$ med frekvenser $c.freq$
 
-__Output__: Binær koding som minimerer forventet kodelengde.
+__Output__: Binær koding som minimerer forventet kodelengde $\sum_{c\;∈\;C}c.freq × length(code(c))$.
 
 - VIl lage binære koder for tegn
 - Tegnene har frekvens
