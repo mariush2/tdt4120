@@ -6,3 +6,6 @@ Dette repoet inneholder øvingene og forelesning notater fra TDT4120, høst 2018
 
 ## Forelesninger
 <a href="./forelesninger/">Forelesninger</a>
+
+## Til Eksamen
+<a href="./eksamen/algoritmer">Algoritmer</a>
