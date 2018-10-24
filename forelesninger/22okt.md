@@ -30,12 +30,12 @@ title: Forelesning 22. Oktober
 # 1:5 Dekomponering
 Vi begynner med å anta en asyklisk graf. Vi ser at vi kan la grafen være sin egen delinstansgraf.
 
-Vil finne avstand lille-delta(s, t) fra startnoden s.
-Vi antar så induktivt at vi har funnet lille-delta(s, -) for inn-naboer.
-Inn-nabo x gir mulig stilengde lille-delta(s, x) + w(x, t); velg minium!
+Vil finne avstand $\delta(s, t)$ fra startnoden $s$.
+Vi antar så induktivt at vi har funnet $\delta(s, -)$ for inn-naboer.
+Inn-nabo $x$ gir mulig stilengde $\delta(s, x) + w(x, t)$; velg minium!
 
 
-Vi får altså at lille-delta(s, t) = min{lille-delta(s, u) + w(u, t), lille-delta(s, v) + w(v, t)}
+Vi får altså at $\delta(s, t) = min{\delta(s, u) + w(u, t), \delta(s, v) + w(v, t)}$
 
 
 Video startet;
@@ -77,7 +77,7 @@ Så lenge u.d er rett, kan vi trygt utføre linje 8 og 9 (de siste to linjene)
 
 Med andre ord, nå kan vi bruke ut-kanter også!
 
-Dette kalles reaching, istedenfor pulling. Som i vanlig DP, husk valg som tas. Dette gjøres vha. en forgjenger (pi)!
+Dette kalles reaching, istedenfor pulling. Som i vanlig DP, husk valg som tas. Dette gjøres vha. en forgjenger ($\pi$)!
 
 Flytter init og min til en egen funksjon, refaktor!
 
@@ -102,9 +102,9 @@ NB! Sykler fungerer ikke med denne modellen
 
 | Operasjon            | Antall    | Kjøretid     |
 | -------------------- |:---------:| ------------:|
-| Topologisk-sortering | 1         | $\theta(V + E)$ |
-| Initialisering       | 1         | $\theta(V)$     |
-| RELAX                | E         | $\theta(1)$     |
+| Topologisk-sortering | 1         | $\Theta(V + E)$ |
+| Initialisering       | 1         | $\Theta(V)$     |
+| RELAX                | E         | $\Theta(1)$     |
 
 Kantslakking er altså en oppspalting av miniums-operasjoner fra dekomponeringen. Vi har foreløpig ikke vært så kreative med hvordan vi har brukt det - la oss studere teknikken i litt mer detalj.
 
@@ -113,7 +113,7 @@ Kantslakking er altså en oppspalting av miniums-operasjoner fra dekomponeringen
 
 # 3:5 Kantslakking
 
-lille-delta(s, v) <= v.d
+$$\delta(s, v) <= v.d$$
 
 Kantslakking; problematisk når vi har flere strukne kanter i en sti.
 
@@ -128,14 +128,14 @@ Se side 650 for flere slektninger av denne egenskapen.
 - Å finne den effektivt: Uløst (NP-hardt)
 
 ---
-La <v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>k</sub>> være korteste vei til z.
+La $<v_1, v_2, \dots , v_k_>$ være korteste vei til $z$.
 Vi vil slakke kantene langs stien, men kjenner ikke rekkefølgen.
 
 __Løsning:__
-Slakk absolutt alle kanter k - 1 ganger!
+Slakk absolutt alle kanter $k - 1$ ganger!
 ---
 
-Hvis vi lar k = \|V\| så får alle noder rett estimat
+Hvis vi lar $k = |V|$ så får alle noder rett estimat
 
 ---
 
@@ -158,9 +158,9 @@ function bellman_ford(G, w, s)
 
 | Operasjon      | Antall | Kjøretid |
 | -------------- |:------:| --------:|
-| Initialisering | 1      | $\theta(V)$ |
-| RELAX          | V - 1  | $\theta(E)$ |
-| RELAX          | O(V)   | $\theta(E)$ |
+| Initialisering | 1      | $\Theta(V)$ |
+| RELAX          | $V - 1$  | $\Theta(E)$ |
+| RELAX          | $O(V)$   | $\Theta(E)$ |
 
 __Totalt: O(VE)__
 
@@ -215,15 +215,15 @@ end
 
 | Operasjon      | Antall | Kjøretid |
 | -------------- |:------:| --------:|
-| Initialisering | 1      | $\theta(V)$ |
-| BUILD-HEAP     | 1      | $\theta(V)$ |
-| EXTRACT-MIN    | V      | O(lg V)  |
-| DECREASE-KEY   | E      | O(lg V)  |
+| Initialisering | 1      | $\Theta(V)$ |
+| BUILD-HEAP     | 1      | $\Theta(V)$ |
+| EXTRACT-MIN    | $V$      | $O(lg V)$  |
+| DECREASE-KEY   | $E$      | $O(lg V)$  |
 
 __Total: O(V lg V + E lg V)__
 
-Med binærheap: bedre enn lineært søk for E = o(V<sup>2</sup>/lg V)
+Med binærheap: bedre enn lineært søk for $E = o(V^2/lg V)$
 
-Med Fibonacci-heap: DECREASE-KEY er O(1): vi får O(V lg V + E)
+Med Fibonacci-heap: DECREASE-KEY er $O(1)$: vi får $O(V lg V + E)$
 
 {% include mathjax.html %}
