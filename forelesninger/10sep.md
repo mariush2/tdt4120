@@ -53,13 +53,13 @@ _Trenger maks $\log n!$ ja-nei-spørsmål_
 
 #### Worstcase
 $$T_w(n) = O(\infty)\\
-$$T_w(n) = \theta(?)\\
-$$T_w(n) = \Omega(n \log n)\\
+T_w(n) = \theta(?)\\
+T_w(n) = \Omega(n \log n)\\$$
 
 #### Bestcase
 $$T_b(n) = O(\infty)\\
-$$T_b(n) = \Theta(?)\\
-$$T_b(n) = \Omega(n)\\
+T_b(n) = \Theta(?)\\
+T_b(n) = \Omega(n)\\$$
 
 ## 2:6 Tellesortering
 function counting-sort(A, B, k)
