@@ -117,7 +117,7 @@ Noder oppdages før og avsluttes etter sine etterkommere
 
 ## Kjøretid
 - DFS - Worst Case: $\theta$(V + E), Best case: $\theta$(V + E)
-- BFS - Worst Case: $\theta$(V + E), Best case: $\theta$(1)
+- BFS - Worst Case: $\theta$(V + E), Best case: $\theta$(V)
 
 # 4:4 Topologisk sortering
 - Gi nodene en rekkefølge

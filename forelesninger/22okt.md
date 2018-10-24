@@ -133,6 +133,7 @@ Vi vil slakke kantene langs stien, men kjenner ikke rekkefølgen.
 
 __Løsning:__
 Slakk absolutt alle kanter $k - 1$ ganger!
+
 ---
 
 Hvis vi lar $k = \|V\|$ så får alle noder rett estimat
