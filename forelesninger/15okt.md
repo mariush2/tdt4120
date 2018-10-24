@@ -52,11 +52,11 @@ $m$ operasjoner: $O(m \times \alpha(n))$. (med komprimering og union by rank)
 $$
 α(n)=
 \begin{cases}
-  0   hvis 0 ⩽ n ⩽ 2,\\
-  1   hvis n = 3,\\
-  2   hvis 4 ⩽ n ⩽ 7,\\
-  3   hvis 8 ⩽ n ⩽ 2047,\\
-  4   hvis 2048 ⩽ n ⩽ 16^{512}\\
+  0\:hvis\:0 ⩽ n ⩽ 2,\\
+  1\:hvis\:n = 3,\\
+  2\:hvis\:4 ⩽ n ⩽ 7,\\
+  3\:hvis\:8 ⩽ n ⩽ 2047,\\
+  4\:hvis\:2048 ⩽ n ⩽ 16^{512}
 \end{cases}
 $$
 
