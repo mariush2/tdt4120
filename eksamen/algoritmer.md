@@ -1,5 +1,6 @@
 ---
 title: Algoritmer til eksamen
+toc: true
 ---
 # En samling av viktige algoritmer til eksamen
 
@@ -11,7 +12,7 @@ title: Algoritmer til eksamen
 
 - [Generisk MST](#Generisk)
 
-- [Kruskal algoritme](#Kruskal) 
+- [Kruskal algoritme](#Kruskal)
 
 - [Prims algoritme](#Prims)
 
@@ -20,12 +21,6 @@ title: Algoritmer til eksamen
 - [Bellman-ford](#Bellman-ford)
 
 - [Dijkstras algoritme](#Dijkstras)
-
----
-
-[TOC]
-
----
 
 
 ## Huffman
