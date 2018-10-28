@@ -4,6 +4,8 @@ toc: true
 ---
 # En samling av viktige algoritmer til eksamen
 
+{{ content | toc }}
+
 - [Huffman](#Huffman)
 
 - [Breadth-first-search](#Breadth-first-search)
