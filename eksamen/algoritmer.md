@@ -3,23 +3,23 @@ title: Algoritmer til eksamen
 ---
 # En samling av viktige algoritmer til eksamen
 
-- [Huffman](#Huffman)
+- [Huffman](#huffman)
 
-- [Breadth-first-search](#Breadth-first-search)
+- [Breadth-first-search](#breadth-first-search)
 
-- [Depth-first-search](#Depth-first-search)
+- [Depth-first-search](#depth-first-search)
 
-- [Generisk MST](#Generisk)
+- [Generisk MST](#generisk)
 
-- [Kruskal algoritme](#Kruskal)
+- [Kruskal algoritme](#kruskal)
 
-- [Prims algoritme](#Prims)
+- [Prims algoritme](#prims)
 
-- [DAG-Shortest-Path](#DAG-Shortest-Path)
+- [DAG-Shortest-Path](#dag-shortest-path)
 
-- [Bellman-ford](#Bellman-ford)
+- [Bellman-ford](#bellman-ford)
 
-- [Dijkstras algoritme](#Dijkstras)
+- [Dijkstras algoritme](#dijkstras)
 
 
 ## Huffman
