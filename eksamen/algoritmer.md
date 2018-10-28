@@ -1,10 +1,7 @@
 ---
 title: Algoritmer til eksamen
-toc: true
 ---
 # En samling av viktige algoritmer til eksamen
-
-{{ content | toc }}
 
 - [Huffman](#Huffman)
 
