@@ -3,6 +3,31 @@ title: Algoritmer til eksamen
 ---
 # En samling av viktige algoritmer til eksamen
 
+- [Huffman](#Huffman)
+
+- [Breadth-first-search](#Breadth-first-search)
+
+- [Depth-first-search](#Depth-first-search)
+
+- [Generisk MST](#Generisk)
+
+- [Kruskal algoritme](#Kruskal) 
+
+- [Prims algoritme](#Prims)
+
+- [DAG-Shortest-Path](#DAG-Shortest-Path)
+
+- [Bellman-ford](#Bellman-ford)
+
+- [Dijkstras algoritme](#Dijkstras)
+
+- - -
+
+[TOC]
+
+- - -
+
+
 ## Huffman
 
 __Input__: Alfabet $C = \\{c,...\\}$ med frekvenser $c.freq$
@@ -109,7 +134,7 @@ Worst\:case: \Theta(V + E)\\
 Best\:case: \Theta(V + E)\\
 $$
 
-## Generisk MST
+## Generisk
 
 __Input:__ En urettet graf $G = (V, E)$ og en vekt-funksjon $w: E \rightarrow R$
 
@@ -130,7 +155,7 @@ function generic_mst(G, w)
 end
 ```
 
-## Kruskal algoritme
+## Kruskal
 
 __To skoger på en gang__
 
@@ -167,7 +192,7 @@ function mst_kruskal(G, w)
 
 $$Totalt:\:O(E log(V))$$
 
-## Prims algoritme
+## Prims
 
 - Kan implementeres vha. traversering
 - Der BFS bruker FIFO og DFS bruker LIFO, så bruker Prim en min-prioritets-kø
@@ -267,7 +292,7 @@ function bellman_ford(G, w, s)
 
 $Totalt: O(VE)$
 
-## Dijkstras algoritme
+## Dijkstras
 
 ```julia
 function dijkstra(G, w, s)
