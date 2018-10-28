@@ -21,11 +21,11 @@ title: Algoritmer til eksamen
 
 - [Dijkstras algoritme](#Dijkstras)
 
-- - -
+---
 
 [TOC]
 
-- - -
+---
 
 
 ## Huffman
