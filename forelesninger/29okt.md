@@ -187,8 +187,8 @@ $$
 $$
 \pi_{ij}^{(k)}=
 \begin{cases}
-  pi_{ij}{(k - 1)}\: if \: d_{ij}^{(k - 1)} ⩽ d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)},\\
-  pi_{kj}{(k - 1)}\: if \: d_{ij}^{(k - 1)} > d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)}.
+  \pi_{ij}{(k - 1)}\: if \: d_{ij}^{(k - 1)} ⩽ d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)},\\
+  \pi_{kj}{(k - 1)}\: if \: d_{ij}^{(k - 1)} > d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)}.
 \end{cases}
 $$
 
@@ -205,8 +205,8 @@ Bruker bare de beste
 $$
 \pi_{ij}^{(k)}=
 \begin{cases}
-  pi_{ij}^{(k - 1)}\: if\:d_{ij}^{(k - 1)} ⩽ d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)},\\
-  pi_{kj}^{(k - 1)}\: if\:d_{ij}^{(k - 1)} > d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)}.
+  \pi_{ij}^{(k - 1)}\: if\:d_{ij}^{(k - 1)} ⩽ d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)},\\
+  \pi_{kj}^{(k - 1)}\: if\:d_{ij}^{(k - 1)} > d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)}.
 \end{cases}
 $$
 
