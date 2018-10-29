@@ -99,14 +99,16 @@ Delproblemet blir da å finne en vei fra $i$ til $j$ via nodene vi har fått til
 
 De mulige stiene $p$, $p_1$ og $p_2$ går kun via noder fra $\\{1 \cdots k - 1\\}$
 
-$$t_{ij}^{(k)} = t_{ij}^{(k - 1)} \bigvee (t_{ki}^{(k - 1)} \bigwedge t_{kj}^{(k - 1)})\\
+$$t_{ij}^{(k)} = t_{ij}^{(k - 1)} \bigvee (t_{ki}^{(k - 1)} \bigwedge t_{kj}^{(k - 1)})$$
 
+$$
 t_{ij}{(0)}=
 \begin{cases}
   0\:if\:i \neq j\:and\:(i,j) ∉ E,\\
-  1\:if\:i = j\:or\:(i,j) ∈ E.
+  1\:if\:i = j\:or\:(i,j) ∈ E.\\
 \end{cases}
 $$
+
 ```julia
 function transitive_closure(G)
   n = |G.V|
@@ -169,32 +171,32 @@ Stien kan enten være $d_{ij}^{(k - 1)}$ eller $d_{ik}^{(k - 1)} + d_{kj}^{(k - 
 $$
 d_{ij}^{(k)}=
 \begin{cases}
-  w_{ij} \: if k = 0,
-  min(d_{ij}^{(k - 1)}, d_{ik}^{(k - 1)}, d_{kj}^{(k - 1)}) \: if k \geqqslant 1
+  w_{ij} \: if\:k = 0,\\
+  min(d_{ij}^{(k - 1)}, d_{ik}^{(k - 1)}, d_{kj}^{(k - 1)}) \: if\:k ⩾ 1
 \end{cases}
 $$
 
 $$
 \pi_{ij}^{(0)}=
 \begin{cases}
-  NIL \: if i = j or w_{ij} = ∞,\\
-  i \: if i \neq and w_{ij} < ∞
+  NIL \: if\:i = j\:or\:w_{ij} = ∞,\\
+  i \: if\:i \neq j\:and\:w_{ij} < ∞
 \end{cases}
 $$
 
 $$
 \pi_{ij}^{(k)}=
 \begin{cases}
-  pi_{ij}{(k - 1)}\: if d_{ij}^{(k - 1)} ⩽ d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)},\\
-  pi_{kj}{(k - 1)}\: if d_{ij}^{(k - 1)} > d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)}.
+  pi_{ij}{(k - 1)}\: if \: d_{ij}^{(k - 1)} ⩽ d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)},\\
+  pi_{kj}{(k - 1)}\: if \: d_{ij}^{(k - 1)} > d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)}.
 \end{cases}
 $$
 
 $$
 d_{ij}=
 \begin{cases}
-  w_{ij} \: if k = 0,
-  min(d_{ij}, d_{ik}, d_{kj}) \: if k >= 1
+  w_{ij} \: if k = 0,\\
+  min(d_{ij}, d_{ik}, d_{kj}) \: if k ⩾ 1\\
 \end{cases}
 $$
 
@@ -203,8 +205,8 @@ Bruker bare de beste
 $$
 \pi_{ij}^{(k)}=
 \begin{cases}
-  pi_{ij}^{(k - 1) \: if d_{ij}^{(k - 1)} ⩽ d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)},\\
-  pi_{kj}^{(k - 1)\: if d_{ij}^{(k - 1)} > d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)}.
+  pi_{ij}^{(k - 1) \: if\:d_{ij}^{(k - 1)} ⩽ d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)},\\
+  pi_{kj}^{(k - 1)\: if\:d_{ij}^{(k - 1)} > d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)}.
 \end{cases}
 $$
 
