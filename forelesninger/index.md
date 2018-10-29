@@ -1,13 +1,15 @@
 # Forelesningsnotater
 
-## Forelesning <a href="./10sep">10. September</a>
+## (Forelesning 10. September)[./10sep]
 
-## Forelesning <a href="./24sep">24. September</a>
+## (Forelesning 24. September)[./24sep]
 
-## Forelesning <a href="./1okt">1. Oktober</a>
+## (Forelesning 1. Oktober)[./1okt]
 
-## Forelesning <a href="./8okt">8. Oktober</a>
+## (Forelesning 8. Oktober)[./8okt]
 
-## Forelesning <a href="./15okt">15. Oktober</a>
+## (Forelesning 15. Oktober)[./15okt]
 
-## Forelesning <a href="./22okt">22. Oktober</a>
+## (Forelesning 22. Oktober)[./22okt]
+
+## (Forelesning 29. oktober)[./29okt]

@@ -20,7 +20,7 @@ Korteste vei fra alle til alle
 
 ---
 
-## 1:3 Jonhsons algortime
+## 1:3 Jonhsons algoritme
 
 __Input__: En vektet, rettet graf $G = <V,E>$ uten negative sykler, der $V = \\{1, \cdots, n\\}$, og vektene er gitt av matrisen $W = (W_{ij})$
 
