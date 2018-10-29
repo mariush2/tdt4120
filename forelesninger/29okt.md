@@ -203,8 +203,8 @@ Bruker bare de beste
 $$
 \pi_{ij}^{(k)}=
 \begin{cases}
-  pi_{ij}{(k - 1) \: if d_{ij}^{(k - 1)} ⩽ d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)},\\
-  pi_{kj}{(k - 1)\: if d_{ij}^{(k - 1)} > d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)}.
+  pi_{ij}^{(k - 1) \: if d_{ij}^{(k - 1)} ⩽ d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)},\\
+  pi_{kj}^{(k - 1)\: if d_{ij}^{(k - 1)} > d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)}.
 \end{cases}
 $$
 
@@ -230,4 +230,15 @@ function floyd_warshall'(W)
           d_ij = d_ik + d_kj
           π.ij = π.kj
   return D, Π
+```
+
+```julia
+function print_all_shortest_path(Π, i, j)
+  if i == j
+    print i
+  elseif π_ij == NIL
+    print "no path from" i "to" j "exists"
+  else
+    print_all_shortest_path(Π, i, π_ij)
+    print j
 ```
