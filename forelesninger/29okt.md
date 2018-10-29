@@ -242,3 +242,7 @@ function print_all_shortest_path(Π, i, j)
     print_all_shortest_path(Π, i, π_ij)
     print j
 ```
+
+### Kjøretid
+
+Totalt $\Theta(n^3)$
