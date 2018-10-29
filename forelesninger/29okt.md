@@ -22,7 +22,7 @@ Korteste vei fra alle til alle
 
 ## 1:3 Jonhsons algoritme
 
-__Input__: En vektet, rettet graf $G = <V,E>$ uten negative sykler, der $V = \\{1, \cdots, n\\}$, og vektene er gitt av matrisen $W = (W_{ij})$
+__Input__: En vektet, rettet graf $G = <V,E>$ uten negative sykler, der $V = \\{1, \ldots, n\\}$, og vektene er gitt av matrisen $W = (W_{ij})$
 
 __Output__: En $n × n$-matrise $D = (d_{ij})$ med avstander, dvs., $d_{ij} = \delta(i,j)$
 
@@ -41,13 +41,13 @@ Vekten $w(u, v)$ økes med __differansen__ $h(u) - h(v)$
 For hver node i midten av en sti, vil kansellere hverandre
 
 
-Vi må ha $w(u, v) + h(u) - h(v) \geqqslant 0$, dvs $w(u, v) + h(u) \geqqslant h(v)$
+Vi må ha $w(u, v) + h(u) - h(v) \geqslant 0$, dvs $w(u, v) + h(u) \geqslant h(v)$
 
-Fra én-til-alle: $\delta(s, v) \leqqslant \delta(s, u) + w(u, v)$. Kan la $h(v) = \delta(s, v)$!
+Fra én-til-alle: $\delta(s, v) \leqslant \delta(s, u) + w(u, v)$. Kan la $h(v) = \delta(s, v)$!
 
 
-$$ w(u, v) + h(u) \geqqslant h(v)\\
-w(u, v) + \delta(s, u) \geqqslant \delta(s,v )$$
+$$ w(u, v) + h(u) \geqslant h(v)\\
+w(u, v) + \delta(s, u) \geqslant \delta(s,v )$$
 
 Men hva er $s$? Vi må sikre at vi når alle... (uendelighet)
 
@@ -92,14 +92,14 @@ Traversér fra hver node?
 
 $$ t_{ij}^{(k)} $$
 
-Det finnes en vei fra $i$ til $j$ via node fra $\\{1 \cdots k\\}$
+Det finnes en vei fra $i$ til $j$ via node fra $\\{1 \ldots k\\}$
 
 
 Delproblemet blir da å finne en vei fra $i$ til $j$ via nodene vi har fått tildelt.
 
-De mulige stiene $p$, $p_1$ og $p_2$ går kun via noder fra $\\{1 \cdots k - 1\\}$
+De mulige stiene $p$, $p_1$ og $p_2$ går kun via noder fra $\\{1 \ldots k - 1\\}$
 
-$$t_{ij}^{(k)} = t_{ij}^{(k - 1)} \bigvee (t_{ki}^{(k - 1)} \bigwedge t_{kj}^{(k - 1)})$$
+$$t_{ij}^{(k)} = t_{ij}^{(k - 1)} \wedge (t_{ki}^{(k - 1)} \wedge t_{kj}^{(k - 1)})$$
 
 $$
 t_{ij}{(0)}=
@@ -156,11 +156,11 @@ Målsetting:
 
 $$d_{ij}^{(k)}$$
 
-Kortest vei fra $i$ til $j$ via noder fra $\\{1 \cdots ... k\\}$
+Kortest vei fra $i$ til $j$ via noder fra $\\{1 \ldots ... k\\}$
 
 $$\pi_{ij}^{(k)}$$
 
-Forgjengeren til $j$ om vi starter i $i$ og går via noder fra $\\{1 \cdots ... k\\}$
+Forgjengeren til $j$ om vi starter i $i$ og går via noder fra $\\{1 \ldots ... k\\}$
 
 Det samme som i Transitiv lukning (k-noder).
 
@@ -205,10 +205,11 @@ Bruker bare de beste
 $$
 \pi_{ij}^{(k)}=
 \begin{cases}
-  pi_{ij}^{(k - 1) \: if\:d_{ij}^{(k - 1)} ⩽ d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)},\\
-  pi_{kj}^{(k - 1)\: if\:d_{ij}^{(k - 1)} > d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)}.
+  pi_{ij}^{(k - 1)}\: if\:d_{ij}^{(k - 1)} ⩽ d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)},\\
+  pi_{kj}^{(k - 1)}\: if\:d_{ij}^{(k - 1)} > d_{ik}^{(k - 1)} + d_{kj}^{(k - 1)}.
 \end{cases}
 $$
+
 
 ```julia
 function floyd_warshall(W)
