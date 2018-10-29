@@ -76,7 +76,7 @@ function johnson(G, w)
 
 __Input__: En rettet graf $G =(V, E)$
 
-__Output__: EN rettet graf $G⋆ = (V, E⋆)$ der $(i, j) ∈ E⋆$ hvis og bare hvis det finnes en sti fra $i$ til $j$ i $G$.
+__Output__: En rettet graf $G⋆ = (V, E⋆)$ der $(i, j) ∈ E⋆$ hvis og bare hvis det finnes en sti fra $i$ til $j$ i $G$.
 
 
 Traversér fra hver node?
@@ -99,7 +99,7 @@ Delproblemet blir da å finne en vei fra $i$ til $j$ via nodene vi har fått til
 
 De mulige stiene $p$, $p_1$ og $p_2$ går kun via noder fra $\\{1 \ldots k - 1\\}$
 
-$$t_{ij}^{(k)} = t_{ij}^{(k - 1)} \wedge (t_{ki}^{(k - 1)} \wedge t_{kj}^{(k - 1)})$$
+$$t_{ij}^{(k)} = t_{ij}^{(k - 1)} \vee (t_{ki}^{(k - 1)} \wedge t_{kj}^{(k - 1)})$$
 
 $$
 t_{ij}{(0)}=
