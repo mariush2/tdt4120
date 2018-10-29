@@ -14,9 +14,9 @@ Korteste vei fra alle til alle
 ## Pensum
 - Kap. 25. All-pairs shortest paths: Innledning, 25.2 og 25.3
 
-1. [Jonsons algoritme](#1:3)
-2. [Transitiv lukning](#2:3)
-3. [Floyd-Warshall](#3:3)
+1. [Jonsons algoritme](#13-jonhsons-algoritme)
+2. [Transitiv lukning](#23-transitiv-lukning)
+3. [Floyd-Warshall](#33-floyd-warshall)
 
 ---
 
