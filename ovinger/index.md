@@ -1,21 +1,23 @@
 # Assignments
 
-## <a href="./oving1/">Øving 1</a>
+## [Øving 1](./oving1)
 
-## <a href="./oving2">Øving 2</a>
+## [Øving 2](./oving2)
 
-## <a href="./oving3">Øving 3</a>
+## [Øving 3](./oving3)
 
-## <a href="./oving4">Øving 4</a>
+## [Øving 4](./oving4)
 
-## <a href="./oving5">Øving 5</a>
+## [Øving 5](./oving5)
 
-## <a href="./oving6">Øving 6</a>
+## [Øving 6](./oving6)
 
-## <a href="./oving7">Øving 7</a>
+## [Øving 7](./oving7)
 
-## <a href="./oving8">Øving 8</a>
+## [Øving 8](./oving8)
 
-## <a href="./oving9">Øving 9</a>
+## [Øving 9](./oving9)
 
-## <a href="./oving10">Øving 10</a>
+## [Øving 10](./oving10)
+
+## [Øving 11](./oving11)
