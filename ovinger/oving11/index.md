@@ -1,3 +1,5 @@
+# alltoall.jl
+```julia
 #f = min
 #g = +
 f(x, y) = min(x, y)
@@ -25,3 +27,4 @@ function test_floyd()
 end
 
 println(test_floyd())
+```
