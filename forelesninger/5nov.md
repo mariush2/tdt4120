@@ -38,15 +38,15 @@ __Flytnett:__ Rettet graf $G = (V, E)$
 - $(u, v) ∉ E \Longrightarrow c(u, v) = 0$
 
 __Flyt:__ En funksjon $𝑓 : V × V \longrightarrow ℝ$
-- $0 \leqq 𝑓(u, v) \leqq c(u, v)$
-- $u \ne s, t \Longrightarrow Σ_v \itf (v, u) = Σ_v \itf (u, v)$
+- $0 \leq 𝑓(u, v) \leq c(u, v)$
+- $u \ne s, t \Longrightarrow Σ_v 𝑓 (v, u) = Σ_v 𝑓 (u, v)$
 
-__Flytverdi:__ $\|𝑓\| = Σ_v \itf (s, v) - Σ_v \itf (v, s)$
+__Flytverdi:__ $\|𝑓\| = Σ_v 𝑓 (s, v) - Σ_v 𝑓 (v, s)$
 
 
 __Input:__ Et flyttnetverk G
 
-__Output:__ En flyt $\itf$ for $G$ med maks. $\|\itf\|$
+__Output:__ En flyt $𝑓$ for $G$ med maks. $\|𝑓\|$
 
 
 - Cormen 1 & 2 har __andre definisjoner__
@@ -168,7 +168,7 @@ function edmonds_karp(G, s, t)
   until t.a == 0
 ```
 | Operasjoner | Antall | Kjøretid |
-| Finn forøkende sti | $O(\|𝑓^\*\|)$ | $O(E)$ |
+| Finn forøkende sti | $O(|𝑓^\*|)$ | $O(E)$ |
 
 $$Totalt:\:O(E\|𝑓^\*\|)$$
 
@@ -193,16 +193,17 @@ $$Totalt:\:O(VE^2)$$
 __Snitt i flytnettverk:__ Partisjon $(S,T)$ av $V$
   - $s ∈ S$ og $t ∈ T$
   - Netto-flyt:
-    - $𝑓(S,T) = \sum\limits_{u∈S}\sum\limits_{v∈T} \itf (u,v) - \sum\limits_{u∈S}\sum\limits_{v∈T} \itf (v,u)$
+    - $𝑓(S,T) = \sum\limits_{u∈S}\sum\limits_{v∈T} 𝑓 (u,v) - \sum\limits_{u∈S}\sum\limits_{v∈T} 𝑓 (v,u)$
   - Kapasitet:
     - $c(S,T) = \sum\limits_{u∈S}\sum\limits_{v∈T} c(u,v)$
 
 
 __Lemma 26.5:__ $𝑓(S,T) = \|𝑓\|$
-  - Korollar 26.5: $\|𝑓\| \leqq c(S,T)$
+  - Korollar 26.5: $\|𝑓\| \leq c(S,T)$\leq
 
 
 __Input:__ Et flytnettverk $G = (V,E)$ med kilde $s$ og sluk $t$
+
 __Output:__ Et snitt $(S,T)$ med minst mulig kapasitet, dvs., der $c(S,T)$ er minimal
 
 ### Maks. flyt = min. snitt
@@ -216,6 +217,7 @@ __Matching:__ Delmengde $M ⊆ E$ for en urettet graf $G = (V,E)$
 
 
 __Input:__ En bipartitt urettet graf $G = (V,E)$
+
 __Output:__ En matching $M ⊆ E$ med flest mulig kanter, dvs., der $\|M\|$ er maksimal.
 
 
