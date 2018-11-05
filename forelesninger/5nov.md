@@ -29,7 +29,19 @@ title: Forelesning 5. November
 ---
 
 ## 1:5 Problemet
+__Flytnettverk:__ Rettet graf $G = (V, E)$
+- Kapasitet $c(u, v) \geqq 0$
+- Kilde og sluk $s, t ∈ V$
+- $v ∈ V ⇒ s \leadsto v \leadsto t$
+- Ingen løkker (_self-loops_)
+- $(u, v) ∈ E \Rightarrow (v, u) ∉ E$
+- $(u, v) ∉ E \Rightarrow c(u, v) = 0$
 
+__Flyt:__ En funksjon $𝑓 : V × V \rightarrow 𝚁$
+- $0 \leqq \bif (u, v) \leqq c(u, v)$
+- $u \ne s, t \Rightarrow Σ_v \bif (v, u) = Σ_v \bif (u, v)$
+
+__Flytverdi:__ $|\bif| = Σ_v \bif (s, v) - Σ_v \bif (v, s)$
 ## 2:5 Ideer
 
 ## 3:5 Ford-fulkerson
