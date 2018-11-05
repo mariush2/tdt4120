@@ -167,15 +167,17 @@ function edmonds_karp(G, s, t)
     end
   until t.a == 0
 ```
-| Operasjoner | Antall | Kjøretid |
-| Finn forøkende sti | $O(|𝑓^\*|)$ | $O(E)$ |
+| Operasjoner        | Antall      | Kjøretid |
+| ------------------ | ----------- | -------- |
+| Finn forøkende sti | $O(|𝑓^\*|)$ | $O(E)$   |
 
-$$Totalt:\:O(E\|𝑓^\*\|)$$
+$$Totalt:\:O(E\|𝑓^\*|)$$
 
 Eksponesielt! Bruk BFS!
 
-| Operasjoner | Antall | Kjøretid |
-| Finn forøkende sti | $O(VE)$ | $O(E)$ |
+| Operasjoner        | Antall  | Kjøretid |
+| ------------------ | ------- | -------- |
+| Finn forøkende sti | $O(VE)$ | $O(E)$   |
 
 $$Totalt:\:O(VE^2)$$
 
