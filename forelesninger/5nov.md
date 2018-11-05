@@ -235,3 +235,4 @@ heltallsflyt__
 
 
 {% include mathjax.html %}
+{% include gotop.html %}

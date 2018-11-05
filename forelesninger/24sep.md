@@ -116,3 +116,4 @@ function knapsack(n, W)
      k[i,j] = max(x,y)
 ```
 {% include mathjax.html %}
+{% include gotop.html %}

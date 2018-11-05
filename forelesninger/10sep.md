@@ -172,3 +172,4 @@ function good-partiton(A, p , r)
 $$T(n) = \Theta(n)\\
 
 {% include mathjax.html %}
+{% include gotop.html %}

@@ -161,3 +161,4 @@ __Prøver en grådig algoritme__
  - Anta en vilkårlig annen løsning, med de sjeldneste lenger opp; Ser at bidragene viser at det er trygt å bytte plass slik at de sjeldneste er nederst.
 
 {% include mathjax.html %}
+{% include gotop.html %}

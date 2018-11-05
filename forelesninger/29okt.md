@@ -251,3 +251,4 @@ function print_all_shortest_path(Π, i, j)
 Totalt $\Theta(n^3)$
 
 {% include mathjax.html %}
+{% include gotop.html %}

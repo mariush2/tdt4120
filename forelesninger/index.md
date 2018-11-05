@@ -15,3 +15,5 @@
 ## [Forelesning 29. Oktober - Korteste vei fra alle til alle](./29okt)
 
 ## [Forelesning 5. November - Maksimal flyt](./5nov)
+
+{% include gotop.html %}

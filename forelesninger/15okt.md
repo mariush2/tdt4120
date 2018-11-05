@@ -207,3 +207,4 @@ Dette gjelder om vi bruker en binærhaug
 Kan forbedres med en Fib.haug (Fib heap). Blir da $O(E + V log(V))$.
 
 {% include mathjax.html %}
+{% include gotop.html %}

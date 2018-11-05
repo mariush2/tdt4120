@@ -15,3 +15,6 @@ title: Forelesning ?. ?
 ---
 
 ## 1:? Insert
+
+{% include mathjax.html %}
+{% include gotop.html %}

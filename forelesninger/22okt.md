@@ -230,3 +230,4 @@ Med binærheap: bedre enn lineært søk for $E = o(V^2/lg V)$
 Med Fibonacci-heap: DECREASE-KEY er $O(1)$: vi får $O(V lg V + E)$
 
 {% include mathjax.html %}
+{% include gotop.html %}

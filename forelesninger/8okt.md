@@ -131,3 +131,4 @@ Noder oppdages før og avsluttes etter sine etterkommere
 - Synkende finish-tid: Trygt
 
 {% include mathjax.html %}
+{% include gotop.html %}
