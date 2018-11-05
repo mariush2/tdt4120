@@ -149,7 +149,7 @@ function edmonds_karp(G, s, t)
         else
           c_f(u,v) = (v,u).f
         end
-        if c_f(u,v) > 0 and v.a == 0
+        if c_f(u,v) > 0 && v.a == 0
           v.a = min(u.a, c_f(u,v))
           v.π = u
           enqueue(Q, v)
@@ -167,11 +167,62 @@ function edmonds_karp(G, s, t)
     end
   until t.a == 0
 ```
+| Operasjoner | Antall | Kjøretid |
+| Finn forøkende sti | $O(\|𝑓^\*\|)$ | $O(E)$ |
 
+$$Totalt:\:O(E\|𝑓^\*\|)$$
 
+Eksponesielt! Bruk BFS!
+
+| Operasjoner | Antall | Kjøretid |
+| Finn forøkende sti | $O(VE)$ | $O(E)$ |
+
+$$Totalt:\:O(VE^2)$$
+
+- Avstander _synker ikke_ i residualnettet
+- En kant $(u,v)$ kan være flaskehals _maks annenhver iterasjon_:
+  - Den forsvinner, og må dukke opp igjen
+- Vi velger korteste økende stier
+  - Dermed må v først være 1 kant lenger unna enn u
+  - Så, idet $(u,v)$ dukker opp igjen, må u være 1 lenger unna enn v
+  - Når $(u,v)$ så er kritisk igjen, har altså avstanden til u __økt med minst 2__
+- Dermed kan vi ha maks $O(VE)$ operasjoner!
 
 ## 4:5 Minimalt snitt
 
+__Snitt i flytnettverk:__ Partisjon $(S,T)$ av $V$
+  - $s ∈ S$ og $t ∈ T$
+  - Netto-flyt:
+    - $𝑓(S,T) = \sum\limits_{u∈S}\sum\limits_{v∈T} \itf (u,v) - \sum\limits_{u∈S}\sum\limits_{v∈T} \itf (v,u)$
+  - Kapasitet:
+    - $c(S,T) = \sum\limits_{u∈S}\sum\limits_{v∈T} c(u,v)$
+
+
+__Lemma 26.5:__ $𝑓(S,T) = \|𝑓\|$
+  - Korollar 26.5: $\|𝑓\| \leqq c(S,T)$
+
+
+__Input:__ Et flytnettverk $G = (V,E)$ med kilde $s$ og sluk $t$
+__Output:__ Et snitt $(S,T)$ med minst mulig kapasitet, dvs., der $c(S,T)$ er minimal
+
+### Maks. flyt = min. snitt
+
+
 ## 5:5 Matching
+
+__Matching:__ Delmengde $M ⊆ E$ for en urettet graf $G = (V,E)$
+  - Ingen av kantene i M deler noder
+  - Bipartitt matching: M matcher partisjoner
+
+
+__Input:__ En bipartitt urettet graf $G = (V,E)$
+__Output:__ En matching $M ⊆ E$ med flest mulig kanter, dvs., der $\|M\|$ er maksimal.
+
+
+
+__Heltallsteoremet (26.10):
+For heltallskapasiteter gir Ford-Fulkerson
+heltallsflyt__
+
 
 {% include mathjax.html %}
