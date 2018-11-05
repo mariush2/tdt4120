@@ -42,6 +42,9 @@ __Flyt:__ En funksjon $𝑓 : V × V \rightarrow 𝚁$
 - $u \ne s, t \Rightarrow Σ_v \bif (v, u) = Σ_v \bif (u, v)$
 
 __Flytverdi:__ $|\bif| = Σ_v \bif (s, v) - Σ_v \bif (v, s)$
+
+
+
 ## 2:5 Ideer
 
 ## 3:5 Ford-fulkerson
@@ -49,3 +52,5 @@ __Flytverdi:__ $|\bif| = Σ_v \bif (s, v) - Σ_v \bif (v, s)$
 ## 4:5 Minimalt snitt
 
 ## 5:5 Matching
+
+{% include mathjax.html %}
