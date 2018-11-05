@@ -167,6 +167,7 @@ function edmonds_karp(G, s, t)
     end
   until t.a == 0
 ```
+
 | Operasjoner        | Antall      | Kjøretid |
 | ------------------ | ----------- | -------- |
 | Finn forøkende sti | $O(|𝑓^\*|)$ | $O(E)$   |
