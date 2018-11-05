@@ -10,7 +10,7 @@
 
 ## [Forelesning 15. Oktober - Minimale spenntrær](./15okt)
 
-## [Forelesning 22. Oktober - ortest vei fra én til alle](./22okt)
+## [Forelesning 22. Oktober - Kortest vei fra én til alle](./22okt)
 
 ## [Forelesning 29. Oktober - Korteste vei fra alle til alle](./29okt)
 
