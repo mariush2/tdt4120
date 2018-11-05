@@ -12,4 +12,6 @@
 
 ## [Forelesning 22. Oktober](./22okt)
 
-## [Forelesning 29. oktober](./29okt)
+## [Forelesning 29. Oktober](./29okt)
+
+## [Forelesning 5. November](./5nov)
