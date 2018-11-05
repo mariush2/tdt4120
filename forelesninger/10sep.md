@@ -2,7 +2,7 @@
 title: Forelesning 10. September
 ---
 
-# Forelesning 10. september
+# Forelesning 10. september - Sortering
 
 ## Pensum
 - Kap. 8. Sorting in linear time

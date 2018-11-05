@@ -1,17 +1,17 @@
 # Forelesningsnotater
 
-## [Forelesning 10. September](./10sep)
+## [Forelesning 10. September - Sortering](./10sep)
 
-## [Forelesning 24. September](./24sep)
+## [Forelesning 24. September - Dynamisk programmering](./24sep)
 
-## [Forelesning 1. Oktober](./1okt)
+## [Forelesning 1. Oktober - Grådighet](./1okt)
 
-## [Forelesning 8. Oktober](./8okt)
+## [Forelesning 8. Oktober - Traversering av grafer](./8okt)
 
-## [Forelesning 15. Oktober](./15okt)
+## [Forelesning 15. Oktober - Minimale spenntrær](./15okt)
 
-## [Forelesning 22. Oktober](./22okt)
+## [Forelesning 22. Oktober - ortest vei fra én til alle](./22okt)
 
-## [Forelesning 29. Oktober](./29okt)
+## [Forelesning 29. Oktober - Korteste vei fra alle til alle](./29okt)
 
-## [Forelesning 5. November](./5nov)
+## [Forelesning 5. November - Maksimal flyt](./5nov)

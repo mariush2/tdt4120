@@ -2,7 +2,7 @@
 title: Forelesning 29. oktober
 ---
 
-# Forelesning 29. september
+# Forelesning 29. september - Korteste vei fra alle til alle
 Korteste vei fra alle til alle
 
 ## Læringsmål

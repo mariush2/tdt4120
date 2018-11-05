@@ -1,7 +1,7 @@
 ---
 title: Forelesning 1. Oktober
 ---
-# Forelesning 1. oktober
+# Forelesning 1. oktober - Grådighet
 
 
 ## Pensum

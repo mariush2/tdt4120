@@ -2,7 +2,7 @@
 title: Forelesning 8. Oktober
 ---
 
-# Forelesning 8. oktober
+# Forelesning 8. oktober - Traversering av grafer
 
 ## Pensum
 - Kap. 22. Elementary graph algorithms: Innledning og 22.1-22.4

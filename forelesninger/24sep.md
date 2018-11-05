@@ -1,7 +1,7 @@
 ---
 title: Forelesning 24. September
 ---
-# Forelesning 24. september
+# Forelesning 24. september - Dynamisk programmering
 
 ## Læringsmål
 - Forstå _delproblemgrafer_
