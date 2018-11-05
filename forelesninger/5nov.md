@@ -30,7 +30,7 @@ title: Forelesning 5. November
 
 ## 1:5 Problemet
 __Flytnett:__ Rettet graf $G = (V, E)$
-- Kapasitet $c(u, v) \geqq 0$
+- Kapasitet $c(u, v) \geq 0$
 - Kilde og sluk $s, t ∈ V$
 - $v ∈ V ⇒ s \leadsto v \leadsto t$
 - Ingen løkker (_self-loops_)
@@ -76,9 +76,9 @@ _Flytforøkende sti_
 $$
 c_𝑓(u,v)=
 \begin{cases}
-  c(u,v) - 𝑓(u,v)\:if\:(u,v) ∈ E,\\
-  𝑓(v,u)\:if\:if (v,u) ∈ E,\\
-  0\:otherwise\\
+  c(u,v) - 𝑓(u,v),\:if\:(u,v) ∈ E,\\
+  𝑓(v,u),\:if\:(v,u) ∈ E,\\
+  0\:\:otherwise\\
 \end{cases}
 $$
 
