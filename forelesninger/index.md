@@ -16,4 +16,6 @@
 
 ## [Forelesning 5. November - Maksimal flyt](./5nov)
 
+## [Forelesning 12. November - NP-kompletthet](./12nov)
+
 {% include gotop.html %}
