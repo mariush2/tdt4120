@@ -149,15 +149,15 @@ __Vi vet ikke__ om $P = NP \cap co-NP$
 Mest plausibelt at $P \subset NP \cap co-NP$
 
 
-### Noen (vanskelige) problemer
+# Noen (vanskelige) problemer
 
-#### CIRCUIT-SAT
+## CIRCUIT-SAT
 
  __Instans:__ En krets med logiske porter og én utverdi
 
  __Spørsmål:__ Kan utverdien bli 1?
 
-#### SAT (Sett inn formelen fra forelesning)
+## SAT (Sett inn formelen fra forelesning)
 
 $$
 \begin{equation}
@@ -172,14 +172,14 @@ $$
 
  __Spørsmål:__ Kan formelen være sann?
 
-#### 3-CNF-SAT (Sett inn formel fra forelesning)
+## 3-CNF-SAT (Sett inn formel fra forelesning)
 
 $$
 \begin{equation}
 \begin{split}
-\phi = &(\hspace{0.6em} x_1 \vee \neg x_2 \vee \neg x_3)\: \wedge \\
+\phi = \:&(\hspace{0.6em} x_1 \vee \neg x_2 \vee \neg x_3)\: \wedge \\
 &(\neg x_1 \vee \hspace{0.6em} x_2 \vee \hspace{0.6em} x_3)\: \wedge \\
- &(\hspace{0.7em} x_1 \vee \hspace{0.6em} x_2 \vee \hspace{0.6em} x_3)
+&(\hspace{0.7em} x_1 \vee \hspace{0.6em} x_2 \vee \hspace{0.6em} x_3)
 \end{split}
 \end{equation}
 $$
@@ -188,32 +188,32 @@ $$
 
  __Spørsmål:__ Kan formelen være sann?
 
-#### SUBSET-SUM
+## SUBSET-SUM
 
  __Instans:__ Mengde positive heltall $S$ og positive heltall $t$
 
  __Spørsmål:__ Finnes en delmengde $S' \subseteq S$ så $\Sigma_{s ∈ S'}s = t$
 
-#### CLIQUE
+## CLIQUE
 
  __Instans:__ En urettet graf $G$ og et heltall $k$
 
  __Spørsmål:__ Har $G$ en komplett delgraf med $k$ noder?
 
-#### VERTEX-COVER
+## VERTEX-COVER
 
  __Instans:__ En urettet graf $G$ og et heltall $k$
 
  __Spørsmål:__ Har $G$ et nodedekke med $k$ noder?
  Dvs., $k$ noder som tilsammen ligger inntil alle kanter
 
-#### HAM-CYCLE
+## HAM-CYCLE
 
 __Instans:__ En urettet graf $G$
 
 __Spørsmål:__ Finnes det en sykel som inneholder alle nodene?
 
-#### TSP
+## TSP
 
 __Instans:__ En komplett graf med heltallsvekter og et heltall $k$
 
