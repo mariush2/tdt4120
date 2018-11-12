@@ -70,43 +70,43 @@ Generelt: Egentlig et hvilket som helst ja/nei-spørsmål
 
 
 __Problem med språk:__
-- Konkrete beslutningsproblemer tilsvarer formelle språk (mengder av strenger). Ja-instanser er med, nei-instanser er ikke.
+> Konkrete beslutningsproblemer tilsvarer formelle språk (mengder av strenger). Ja-instanser er med, nei-instanser er ikke.
 
 __Accept, reject, decide__
-- En algoritme $A$ _aksepterer_ $x$ dersom $A(x) = 1$.
-- Den _avviser_ $x$ dersom $A(x) = 0$
-- Den _avjør_ et språk $L$ dersom..
-  - $x \in L \rightarrow A(x) = 1$
-  - $x \in L \rightarrow A(x) = 0$
+> En algoritme $A$ _aksepterer_ $x$ dersom $A(x) = 1$.
+> Den _avviser_ $x$ dersom $A(x) = 0$
+> Den _avjør_ et språk $L$ dersom..
+>  - $x \in L \rightarrow A(x) = 1$
+>  - $x \in L \rightarrow A(x) = 0$
 
 __Accept vs decide:__
-- Selv om $L$ er språket som _aksepteres_ av $A$, så trenger ikke $A$ _avgjøre_ $L$, siden den kan la være å svare for nei-instanser (ved å aldri terminere)
+> Selv om $L$ er språket som _aksepteres_ av $A$, så trenger ikke $A$ _avgjøre_ $L$, siden den kan la være å svare for nei-instanser (ved å aldri terminere)
 
 __Kompleksitetsklasse:__
-- En mengde språk
+> En mengde språk
 
-__P__
-- Språkene som kan avgjøres i polynomisk tid.
-- Også de som kan aksepteres i polynomisk tid!(Theoremt 34.2)
+__P:__
+> Språkene som kan avgjøres i polynomisk tid.
+> Også de som kan aksepteres i polynomisk tid!(Theorem 34.2)
 
 __Cobham's tese:__
-- Det er disse problemene vi kan løse i praksis
+> Det er disse problemene vi kan løse i praksis
 
 __Sertifikat:__
-- En streng $y$ som brukes som "bevis" for et ja-svar
+> En streng $y$ som brukes som "bevis" for et ja-svar
 
 __Verifikasjonsalgoritme:__
-- Tar inn sertifikat $y$ i tillegg til instans $x$
-- En algoritme $A$ __verifiserer__ $x$ hvis det eksiterer et sertifikat $y$ slik at $A(x,y) = 1$
+> Tar inn sertifikat $y$ i tillegg til instans $x$
+> En algoritme $A$ __verifiserer__ $x$ hvis det eksiterer et sertifikat $y$ slik at $A(x,y) = 1$
 
 __Intuitivt:__
-- Algoritmen "sjekker svaret". Om en graf har en Hamilton-sykel, kan sertifikatet være noderekkefølgen i sykelen.
+> Algoritmen "sjekker svaret". Om en graf har en Hamilton-sykel, kan sertifikatet være noderekkefølgen i sykelen.
 
 __Asymmetrisk:__
-- Den finnes ikke "motbevis" eller "anti-sertifikat"
+> Den finnes ikke "motbevis" eller "anti-sertifikat"
 
 __NP:__
-- Språkene som kan verifieres i polynomisk tid
+> Språkene som kan verifieres i polynomisk tid
 
 
 
