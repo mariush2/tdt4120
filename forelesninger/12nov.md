@@ -157,7 +157,7 @@ Mest plausibelt at $P \subset NP \cap co-NP$
 
  __Spørsmål:__ Kan utverdien bli 1?
 
-## SAT (Sett inn formelen fra forelesning)
+## SAT
 
 $$
 \begin{equation}
@@ -172,7 +172,7 @@ $$
 
  __Spørsmål:__ Kan formelen være sann?
 
-## 3-CNF-SAT (Sett inn formel fra forelesning)
+## 3-CNF-SAT
 
 $$
 \begin{equation}
