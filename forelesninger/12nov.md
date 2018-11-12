@@ -251,7 +251,7 @@ __Redusibilitet:__
 
 
 __Ordning:__
-> Relasjonen $<=p$ utgjør en _preordning_
+> Relasjonen $\leqslant p$ utgjør en _preordning_
 
 
 __Hardhetsbevis:__
@@ -283,7 +283,7 @@ __De vanskelige problemene fra tidligere er altså eksempler på NP-komplette pr
 
 __NP-hardhet:__
 > Et problem $Q$ er __NP__-hardt dersom alle problemer i NP kan reduseres til det.
-> Et problem er altså __NP__-komplett dersom det
+> Et problem er altså __NP__-komplett dersom det...
 > - er __NP__-hardt, og
 > - er i __NP__
 
