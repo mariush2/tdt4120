@@ -38,6 +38,7 @@ $$L \in NPC$$
 ### Hvordan viser vi at $L$ er __NP__-komplett?
 
 - Vis at $L \in NP$
+
 > At sertifikatet for ja-svar kan verifiseres i polynomisk tid
 
 - Velg et kjent __NP__-komplett språk $L´$
@@ -52,7 +53,7 @@ som mapper instaner av $L´$ til instanser av $L$
 
 $$ x \in L´⟺ f(x) \in L,$$
 
-for alle $x \in \{0,1\}^{⋆}$
+for alle $x \in \\{0,1\\}^{⋆}$
 
 > Vi må sørge for at vi får samme svar for $f(x)$
 
