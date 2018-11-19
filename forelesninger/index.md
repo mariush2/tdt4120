@@ -18,4 +18,6 @@
 
 ## [Forelesning 12. November - NP-kompletthet](./12nov)
 
+## [Forelesning 19. November - Algoritmisk problemløsning](./19nov)
+
 {% include gotop.html %}
