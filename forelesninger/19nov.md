@@ -43,7 +43,7 @@ $$L \in NPC$$
 - Velg et kjent __NP__-komplett språk $L´$
 - Beskriv en algortime som beregner en funksjon
 
-$$ f\: :\\{0,1\\}^⋆ \longrightarrow \\{0,1\\}^⋆ $$
+$$ f\: :\{0,1\}^⋆ \longrightarrow \{0,1\}^⋆ $$
 
 som mapper instaner av $L´$ til instanser av $L$
 > Dette er altså reduksjonen fra $L´$ til $L$, som viser $L´\leqslant p L$
@@ -52,7 +52,7 @@ som mapper instaner av $L´$ til instanser av $L$
 
 $$ x \in L´⟺ f(x) \in L,$$
 
-for alle $x \in \\{0,1\\}^{⋆}$
+for alle $x \in \{0,1\}^{⋆}$
 
 > Vi må sørge for at vi får samme svar for $f(x)$
 
