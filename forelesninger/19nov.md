@@ -5,7 +5,7 @@ title: Forelesning 19. November
 # Forelesning 19. November - Algoritmisk problemløsning
 
 ## Pensum
-- Utdelt [materiale](https://algdat.idi.ntnu.no/guide.pdf){:target="_blank"} om problemløsning_.
+- Utdelt [materiale](https://algdat.idi.ntnu.no/guide.pdf){:target="_blank"} om problemløsning.
 
 ## Læringsmål
 - Kjenne et bredt spekter av etablerte algoritmer og datastrukturer
