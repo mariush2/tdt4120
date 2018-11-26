@@ -3,6 +3,12 @@ title: Algoritmer til eksamen
 ---
 # En samling av viktige algoritmer til eksamen
 
+- [Tellesortering](#tellesortering)
+
+- [Radikssortering](#radikssortering)
+
+- [Bøttesortering](#bøttesortering)
+
 - [Huffman](#huffman)
 
 - [Breadth-first-search](#breadth-first-search)
@@ -21,6 +27,52 @@ title: Algoritmer til eksamen
 
 - [Dijkstras algoritme](#dijkstras)
 
+## Tellesortering
+
+```julia
+function counting-sort(A, B, k)
+    let C[0...k] be a new array
+    for i = 0 to k
+       C[i] = 0
+    for j = 1 to A.length
+       C[A[j]] += 1
+    for i = 1 to k
+       C[i] = C[i] + C[i - 1]
+    for j = A.length downto 1
+       B[C[A[j]]] = A[j]
+       C[A[j]] -= 1
+```
+
+$$T(n) = \Theta(n + k)$$
+
+## Radikssortering
+
+```julia
+function radix-sort(A, d)
+    for i = 1 to d
+       sort* A by digit d
+```
+
+$$T(n) = \Theta(d * (n + k))\\$$
+
+## Bøttesortering
+
+```julia
+function bucket-sort(A)
+    n = A.length
+    create B[0...n-1]
+    for i = 0 to n
+       make B[i] an empty list
+    for i = 1 to n
+       add A[i] to B[floor(nA[i])]
+    for i = 0 to n - 1
+       sort list B[i] #Bruker insertion sort
+    concatenate B[0]...B[n - 1]
+```
+
+$$T_w(n) = \Theta(n^2)\\$$
+$$T_a(n) = \Theta(n)\\$$
+$$T_b(n) = \Theta(n)\\$$
 
 ## Huffman
 

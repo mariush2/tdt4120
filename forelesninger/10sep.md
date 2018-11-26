@@ -62,6 +62,8 @@ T_b(n) = \Theta(?)\\
 T_b(n) = \Omega(n)\\$$
 
 ## 2:6 Tellesortering
+
+```julia
 function counting-sort(A, B, k)
     let C[0...k] be a new array
     for i = 0 to k
@@ -73,21 +75,27 @@ function counting-sort(A, B, k)
     for j = A.length downto 1
        B[C[A[j]]] = A[j]
        C[A[j]] -= 1
+```
 
-### T(n) = $\theta$(n + k)
+$$T(n) = \Theta(n + k)$$
 Utvid veriområdet
 
 ## 3:6 Radikssortering
+
+```julia
 function radix-sort(A, d)
     for i = 1 to d
        sort* A by digit d
+```
 
-$$T(n) = \Theta(d * (n + k))\\
+$$T(n) = \Theta(d * (n + k))\\$$
 
 Bryt grensen
 ... denne gang for AC
 
 ## 4:6 Bøttesortering
+
+```julia
 function bucket-sort(A)
     n = A.length
     create B[0...n-1]
@@ -98,10 +106,11 @@ function bucket-sort(A)
     for i = 0 to n - 1
        sort list B[i] #Bruker insertion sort
     concatenate B[0]...B[n - 1]
+```
 
-$$T_w(n) = \Theta(n^2)\\
-$$T_a(n) = \Theta(n)\\
-$$T_b(n) = \Theta(n)\\
+$$T_w(n) = \Theta(n^2)\\$$
+$$T_a(n) = \Theta(n)\\$$
+$$T_b(n) = \Theta(n)\\$$
 
 Bryt grensen for AC
 ... ved å begrense problemet
@@ -116,6 +125,7 @@ Induksjon/reduksjon
 
 "Quicksort som binærsøk"
 
+```julia
 function randomized-select(A,p,r,i)
     if p == r
        return A[p]
@@ -127,6 +137,7 @@ function randomized-select(A,p,r,i)
        return randomized-partition(A,p,q - 1, i)
     else
        return randomized-partition(A, q + 1, r, i - k)
+```
 
 $$T(n) = T(n / 2) + n\\
 $$T(n) = 2n - 1\\
@@ -145,6 +156,7 @@ Trenger god pivot
 
 "Median av medianer"
 
+```julia
 function partition-around(A,p,r,x)
     i = 1
     while A[i] != x
@@ -168,6 +180,7 @@ function good-partiton(A, p , r)
        B[i] = A[q + 3]
     x = select(B, 1, m, floor(m/2))
     return partiton-around(A,p,r,x)
+```
 
 $$T(n) = \Theta(n)\\
 
